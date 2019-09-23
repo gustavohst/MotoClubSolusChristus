@@ -58,8 +58,8 @@ function IndexHeader() {
           }}
         />
         <h6 className="category category-absolute">
-          Designed and coded by{" "}
-          <a
+          Coded by Gustavo Tenório and Silas Silva.{" "}
+          {/* <a
             href="https://www.creative-tim.com?ref=pkr-index-page"
             target="_blank"
           >
@@ -68,7 +68,7 @@ function IndexHeader() {
               className="creative-tim-logo"
               src={require("assets/img/creative-tim-white-slim2.png")}
             />
-          </a>
+          </a> */}
         </h6>
       </div>
     </>

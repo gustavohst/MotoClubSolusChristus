@@ -128,6 +128,7 @@ paper-kit-react
         │   ├── ProfilePage.js
         │   └── RegisterPage.js
         └── index-sections
+            ├── SectionAboutUs.js
             ├── SectionButtons.js
             ├── SectionCarousel.js
             ├── SectionDark.js

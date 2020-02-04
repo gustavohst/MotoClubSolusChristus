@@ -4684,7 +4684,7 @@ License - nucleoapp.com/license/
 
 .category-absolute {
   position: absolute;
-  text-align: center;
+  text-align: right;
   top: 100vh;
   margin-top: -60px;
   padding: 0 15px;

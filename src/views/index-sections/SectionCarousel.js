@@ -34,17 +34,37 @@ import {
 
 const items = [
   {
-    src: require("assets/img/soroush-karimi.jpg"),
+    src: require("assets/img/carousel/01.jpg"),
     altText: "Somewhere",
     caption: "Somewhere"
   },
   {
-    src: require("assets/img/federico-beccari.jpg"),
+    src: require("assets/img/carousel/02.jpg"),
     altText: "Somewhere else",
     caption: "Somewhere else"
   },
   {
-    src: require("assets/img/joshua-stannard.jpg"),
+    src: require("assets/img/carousel/03.jpg"),
+    altText: "Here it is",
+    caption: "Here it is"
+  },
+  {
+    src: require("assets/img/carousel/04.jpeg"),
+    altText: "Here it is",
+    caption: "Here it is"
+  },
+  {
+    src: require("assets/img/carousel/05.jpeg"),
+    altText: "Here it is",
+    caption: "Here it is"
+  },
+  {
+    src: require("assets/img/carousel/06.jpeg"),
+    altText: "Here it is",
+    caption: "Here it is"
+  },
+  {
+    src: require("assets/img/carousel/07.jpeg"),
     altText: "Here it is",
     caption: "Here it is"
   }

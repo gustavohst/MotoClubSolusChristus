@@ -35,38 +35,48 @@ import {
 const items = [
   {
     src: require("assets/img/carousel/01.jpg"),
-    altText: "Somewhere",
-    caption: "Somewhere"
+    altText: "Solus Christus",
+    caption: "Solus Christus"
   },
   {
     src: require("assets/img/carousel/02.jpg"),
-    altText: "Somewhere else",
-    caption: "Somewhere else"
+    altText: "Solus Christus",
+    caption: "Solus Christus"
   },
   {
     src: require("assets/img/carousel/03.jpg"),
-    altText: "Here it is",
-    caption: "Here it is"
+    altText: "Solus Christus",
+    caption: "Solus Christus"
   },
   {
     src: require("assets/img/carousel/04.jpeg"),
-    altText: "Here it is",
-    caption: "Here it is"
+    altText: "Solus Christus",
+    caption: "Solus Christus"
   },
   {
     src: require("assets/img/carousel/05.jpeg"),
-    altText: "Here it is",
-    caption: "Here it is"
+    altText: "Solus Christus",
+    caption: "Solus Christus"
   },
   {
     src: require("assets/img/carousel/06.jpeg"),
-    altText: "Here it is",
-    caption: "Here it is"
+    altText: "Solus Christus",
+    caption: "Solus Christus"
   },
   {
     src: require("assets/img/carousel/07.jpeg"),
-    altText: "Here it is",
-    caption: "Here it is"
+    altText: "Solus Christus",
+    caption: "Solus Christus"
+  },
+  {
+    src: require("assets/img/carousel/08.jpeg"),
+    altText: "Solus Christus",
+    caption: "Solus Christus"
+  },
+  {
+    src: require("assets/img/carousel/09.jpeg"),
+    altText: "Solus Christus",
+    caption: "Solus Christus"
   }
 ];
 
@@ -95,7 +105,7 @@ function SectionCarousel() {
   };
   return (
     <>
-      <div className="section pt-o" id="carousel">
+      <div className="pt-o" id="carousel">
         <Container>
           <Row>
             <Col className="ml-auto mr-auto" md="8">

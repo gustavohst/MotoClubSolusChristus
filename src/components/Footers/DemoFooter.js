@@ -28,7 +28,7 @@ function DemoFooter() {
       <Container>
         <Row>
           <nav className="footer-nav">
-            <ul>
+            {/* <ul>
               <li>
                 <a
                   href="https://www.creative-tim.com?ref=pkr-footer"
@@ -53,14 +53,31 @@ function DemoFooter() {
                   Licenses
                 </a>
               </li>
+            </ul> */}
+            <ul>
+              <li>
+                <small>Sola fide (somente a fé)</small>
+              </li>
+              <li>
+                <small>Sola scriptura (somente a Escritura)</small>
+              </li>
+              <li>
+              <small>Solus Christus (somente Cristo)</small>
+              </li>
+              <li>
+              <small>Sola gratia (somente a graça)</small>
+              </li>
+              <li>
+              <small>Soli Deo gloria (glória somente a Deus)</small>
+              </li>
             </ul>
           </nav>
-          <div className="credits ml-auto">
+          {/* <div className="credits ml-auto">
             <span className="copyright">
               © {new Date().getFullYear()}, made with{" "}
               <i className="fa fa-heart heart" /> by Creative Tim
             </span>
-          </div>
+          </div> */}
         </Row>
       </Container>
     </footer>

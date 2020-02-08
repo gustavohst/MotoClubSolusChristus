@@ -30,16 +30,18 @@ function SectionNucleoIcons() {
         <Container>
           <Row>
             <Col lg="6" md="12">
-              <h2 className="title">Nucleo Icons</h2>
+              <h2 className="title">Entre em Contato</h2>
               <br />
               <p className="description">
-                Paper Kit comes with 100 custom icons made by our friends from
-                NucleoApp. The official package contains over 2.100 thin icons
-                which are looking great in combination with Paper Kit Make sure
-                you check all of them and use those that you like the most.
+                Para conhecer melhor o motoclube e poder nos ajudar em nossos projetos sociais.
               </p>
               <br />
-              <Button
+              <h3 className="title">Email</h3>
+              <br />
+              <p className="description">
+                soluschristusmcc@gmail.com
+              </p>
+              {/* <Button
                 className="btn-round"
                 color="danger"
                 href="/nucleo-icons"
@@ -55,11 +57,17 @@ function SectionNucleoIcons() {
                 target="_blank"
               >
                 View All Icons
-              </Button>
+              </Button> */}
             </Col>
-            <Col lg="6" md="12">
+            <Col lg="2" md="12"></Col>
+             <Col lg="4" md="12">
               <div className="icons-container">
-                <i className="nc-icon nc-time-alarm" />
+                <br /><br /><br /><br /><br />
+                <strong>SOLUS CHRISTUS MCC - BRASIL</strong>
+                
+                <p className="description">E conhecereis a verdade, e a verdade vos libertará.</p>
+                <p>João 8:32</p>
+                {/* <i className="nc-icon nc-time-alarm" />
                 <i className="nc-icon nc-atom" />
                 <i className="nc-icon nc-camera-compact" />
                 <i className="nc-icon nc-watch-time" />
@@ -73,8 +81,8 @@ function SectionNucleoIcons() {
                 <i className="nc-icon nc-planet" />
                 <i className="nc-icon nc-tie-bow" />
                 <i className="nc-icon nc-zoom-split" />
-                <i className="nc-icon nc-cloud-download-93" />
-              </div>
+                <i className="nc-icon nc-cloud-download-93" /> */}
+              </div> 
             </Col>
           </Row>
         </Container>

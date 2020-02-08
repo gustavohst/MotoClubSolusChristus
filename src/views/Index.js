@@ -61,9 +61,9 @@ function Index() {
         <SectionTypography /> 
         <SectionJavaScript />*/}
         <SectionCarousel />
-        {/* <SectionNucleoIcons />
-        <SectionDark /> */}
-        <SectionLogin />
+        <SectionNucleoIcons />
+        {/* <SectionDark /> 
+        <SectionLogin />*/}
         {/* <SectionExamples />
         <SectionDownload /> */}
         <DemoFooter />

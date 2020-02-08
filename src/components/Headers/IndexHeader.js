@@ -57,7 +57,7 @@ function IndexHeader() {
             backgroundImage: "url(" + require("assets/img/clouds.png") + ")"
           }}
         />
-        <h6 className="category category-absolute">
+      <h6 className="category category-absolute">
           Coded by Gustavo Tenório and Silas Silva.{" "}
           {/* <a
             href="https://www.creative-tim.com?ref=pkr-index-page"

@@ -51,7 +51,7 @@ function SectionAboutUs() {
                 <details>
                   <summary>Em 04 de dezembro de 2018, após Siqueira sair do ESQUADRÃO DE CRISTO MM e ficar cumprindo um luto estipulado de 12 meses pelo ministério, 
                     o mesmo no início de março de 2019, fez contato com o Athos 2 MC (MT), com a finalidade de, no término de seu luto adentrar nas fileiras daquele clube cristão 
-                    e levantar a bandeira ATHOS 2 no estado de Pernambuco. Demonstrando assim, a vontade de seguir seu chamado evangelístico.
+                    e levantar a bandeira ATHOS 2 no estado de Pernambuco. Demonstrando assim, a vontade de seguir seu chamado evangelístico. <div class="font-weight-light">Ver mais...</div>
                   </summary>
                   <br/>
                   Assim, junto com Paulo Paiva e Shina, todos ex integrantes do ECMM, começaram um trabalho de recrutamento para ao fim do luto dos mesmos, iniciarem uma 

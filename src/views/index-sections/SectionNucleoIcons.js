@@ -26,7 +26,7 @@ import { Button, Container, Row, Col } from "reactstrap";
 function SectionNucleoIcons() {
   return (
     <>
-      <div className="section section-dark section-nucleo-icons">
+      <div className="section section-nucleo-icons">
         <Container>
           <Row>
             <Col lg="6" md="12">

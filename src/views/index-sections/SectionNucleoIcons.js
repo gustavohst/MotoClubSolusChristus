@@ -59,14 +59,15 @@ function SectionNucleoIcons() {
                 View All Icons
               </Button> */}
             </Col>
-            <Col lg="2" md="12"></Col>
-             <Col lg="4" md="12">
-              <div className="icons-container">
-                <br /><br /><br /><br /><br />
+
+             <Col lg="6" md="12">
+              <div className="description">
+                <br /><br />
                 <strong>SOLUS CHRISTUS MCC - BRASIL</strong>
                 
                 <p className="description">E conhecereis a verdade, e a verdade vos libertará.</p>
                 <p>João 8:32</p>
+                
                 {/* <i className="nc-icon nc-time-alarm" />
                 <i className="nc-icon nc-atom" />
                 <i className="nc-icon nc-camera-compact" />
@@ -83,6 +84,13 @@ function SectionNucleoIcons() {
                 <i className="nc-icon nc-zoom-split" />
                 <i className="nc-icon nc-cloud-download-93" /> */}
               </div> 
+              <div>
+              <img
+                  alt="..."
+                  className="img-rounded img-responsive"
+                  src={require("assets/img/map.png")}
+                />
+              </div>
             </Col>
           </Row>
         </Container>

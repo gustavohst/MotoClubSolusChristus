@@ -62,13 +62,13 @@ function DemoFooter() {
                 <small>Sola scriptura (somente a Escritura)</small>
               </li>
               <li>
-              <small>Solus Christus (somente Cristo)</small>
+                <small>Solus Christus (somente Cristo)</small>
               </li>
               <li>
-              <small>Sola gratia (somente a graça)</small>
+                <small>Sola gratia (somente a graça)</small>
               </li>
               <li>
-              <small>Soli Deo gloria (glória somente a Deus)</small>
+                <small>Soli Deo gloria (glória somente a Deus)</small>
               </li>
             </ul>
           </nav>
@@ -78,6 +78,9 @@ function DemoFooter() {
               <i className="fa fa-heart heart" /> by Creative Tim
             </span>
           </div> */}
+        </Row>
+        <Row>
+
         </Row>
       </Container>
     </footer>

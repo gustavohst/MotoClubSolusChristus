@@ -27,6 +27,7 @@ import DemoFooter from "components/Footers/DemoFooter.js";
 
 // index sections
 import SectionAboutUs from "views/index-sections/SectionAboutUs.js";
+import SectionOurMission from "views/index-sections/SectionOurMission.js";
 import SectionNavbars from "views/index-sections/SectionNavbars.js";
 import SectionNavigation from "views/index-sections/SectionNavigation.js";
 import SectionProgress from "views/index-sections/SectionProgress.js";
@@ -55,6 +56,7 @@ function Index() {
       <IndexHeader />
       <div className="main">
         <SectionAboutUs />
+
         {/* <SectionNavbars />
         <SectionNavigation />
         <SectionProgress />
@@ -64,10 +66,7 @@ function Index() {
         <SectionCarousel />
         <SectionNews />
         <SectionNucleoIcons />
-        {/* <SectionDark /> 
-        <SectionLogin />*/}
-        {/* <SectionExamples />
-        <SectionDownload /> */}
+        {/*<SectionDownload /> */}
         <DemoFooter />
       </div>
     </>

@@ -41,8 +41,9 @@ function SectionAboutUs() {
     <>
       <div className=" section-buttons">
         <Container>
-          <div className="title">
-            <h2>Nossa história</h2>
+          <div className="title text-center">
+            <h2><strong>Nossa história</strong></h2>
+            <hr />
           </div>
           <div id="buttons">
             <div className="title">

@@ -26,7 +26,7 @@ import { Button, Container, Row, Col } from "reactstrap";
 function SectionNucleoIcons() {
   return (
     <>
-      <div className="section section-nucleo-icons">
+      <div className="section section-nucleo-icons section-dark text-left">
         <Container>
           <Row>
             <Col lg="6" md="12">
@@ -84,13 +84,13 @@ function SectionNucleoIcons() {
                 <i className="nc-icon nc-zoom-split" />
                 <i className="nc-icon nc-cloud-download-93" /> */}
               </div> 
-              <div>
+              {/* <div>
               <img
                   alt="..."
                   className="img-rounded img-responsive"
                   src={require("assets/img/map.png")}
                 />
-              </div>
+              </div> */}
             </Col>
           </Row>
         </Container>

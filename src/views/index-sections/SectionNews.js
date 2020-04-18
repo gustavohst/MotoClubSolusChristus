@@ -39,17 +39,17 @@ import {
 function SectionAboutUs() {
   return (
     <>
-      <div className="section-buttons section-dark">
+      <div className="section-buttons">
         <Container>
-          <div className="title">
-            <h2>Notícias</h2>
+          <div className="title text-center">
+            <h2><strong>Notícias</strong></h2>
+            <hr />
           </div>
           <div id="buttons">
-            <div className="title">
+            <div className="title text-center">
               <h4>Aniversário do Solus Christus</h4>
             </div>
           </div>
-
         </Container>
       </div>
     </>

@@ -59,7 +59,7 @@ function Index() {
       <div className="main">
         <SectionAboutUs />
         <SectionCarousel />
-        <SectionRepresentations toogle={"toggleModalPE"} /> 
+        <SectionRepresentations /> 
         <SectionNews />
         <SectionNucleoIcons />
         

@@ -34,47 +34,47 @@ import {
 
 const items = [
   {
-    src: require("assets/img/carousel/01.jpg"),
+    src: require("assets/img/carousel/01.webp"),
     altText: "Solus Christus",
     caption: "Solus Christus"
   },
   {
-    src: require("assets/img/carousel/02.jpg"),
+    src: require("assets/img/carousel/02.webp"),
     altText: "Solus Christus",
     caption: "Solus Christus"
   },
   {
-    src: require("assets/img/carousel/03.jpg"),
+    src: require("assets/img/carousel/03.webp"),
     altText: "Solus Christus",
     caption: "Solus Christus"
   },
   {
-    src: require("assets/img/carousel/04.jpeg"),
+    src: require("assets/img/carousel/04.webp"),
     altText: "Solus Christus",
     caption: "Solus Christus"
   },
   {
-    src: require("assets/img/carousel/05.jpeg"),
+    src: require("assets/img/carousel/05.webp"),
     altText: "Solus Christus",
     caption: "Solus Christus"
   },
   {
-    src: require("assets/img/carousel/06.jpeg"),
+    src: require("assets/img/carousel/06.webp"),
     altText: "Solus Christus",
     caption: "Solus Christus"
   },
   {
-    src: require("assets/img/carousel/07.jpeg"),
+    src: require("assets/img/carousel/07.webp"),
     altText: "Solus Christus",
     caption: "Solus Christus"
   },
   {
-    src: require("assets/img/carousel/08.jpeg"),
+    src: require("assets/img/carousel/08.webp"),
     altText: "Solus Christus",
     caption: "Solus Christus"
   },
   {
-    src: require("assets/img/carousel/09.jpeg"),
+    src: require("assets/img/carousel/09.webp"),
     altText: "Solus Christus",
     caption: "Solus Christus"
   }

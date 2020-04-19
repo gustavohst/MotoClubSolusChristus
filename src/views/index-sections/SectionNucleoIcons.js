@@ -39,7 +39,7 @@ function SectionNucleoIcons() {
               <h3 className="title">Email</h3>
               <br />
               <p className="description">
-                soluschristusmcc@gmail.com
+              <a href="mailto:soluschristusmcc@gmail.com?subject=Contato Site">soluschristusmcc@gmail.com</a>               
               </p>
               {/* <Button
                 className="btn-round"

@@ -33,10 +33,11 @@ import {
   Row,
   Col
 } from "reactstrap";
+import { isTemplateExpression } from "typescript";
 
 // core components
 
-function SectionProgress() {
+function SectionBodyModal(props) {
   const [activeTab, setActiveTab] = React.useState("1");
   const toggle = tab => {
     if (activeTab !== tab) {
@@ -87,7 +88,7 @@ function SectionProgress() {
                           src={require("assets/img/faces/erik-lucatero-2.jpg")}
                         />
                         <p><strong>Diretor</strong></p>
-                        <p>Siqueira</p>
+                        <p>{props.directors.Dir}</p>
                         <p>(xx)xxxxx-xxxx</p>
                       </div>
                     </Col>
@@ -99,7 +100,7 @@ function SectionProgress() {
                           src={require("assets/img/faces/ayo-ogunseinde-2.jpg")}
                         />
                         <p><strong>Vice-Diretor</strong></p>
-                        <p>Flávio</p>
+                        <p>{props.directors.ViceDir}</p>
                         <p>(xx)xxxxx-xxxx</p>
                       </div>
                     </Col>
@@ -114,7 +115,7 @@ function SectionProgress() {
                           src={require("assets/img/faces/clem-onojeghuo-2.jpg")}
                         />
                         <p><strong>Diretor Social</strong></p>
-                        <p>XXX</p>
+                        <p>{props.directors.Social}</p>
                         <p>(xx)xxxxx-xxxx</p>
                       </div>
                     </Col>
@@ -126,7 +127,7 @@ function SectionProgress() {
                           src={require("assets/img/faces/clem-onojeghuo-3.jpg")}
                         />
                         <p><strong>Dir. Comunicação</strong></p>
-                        <p>Padilha</p>
+                        <p>{props.directors.Communication}</p>
                         <p>(xx)xxxxx-xxxx</p>
                       </div>
                     </Col>
@@ -144,4 +145,4 @@ function SectionProgress() {
   );
 }
 
-export default SectionProgress;
+export default SectionBodyModal;

@@ -59,8 +59,9 @@ function Index() {
       <div className="main">
         <SectionAboutUs />
         <SectionCarousel />
-        <SectionRepresentations /> 
+        
         <SectionNews />
+        <SectionRepresentations /> 
         <SectionNucleoIcons />
         
         {/*<RegisterPage />

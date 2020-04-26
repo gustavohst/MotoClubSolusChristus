@@ -43,7 +43,7 @@ import SectionDownload from "views/index-sections/SectionDownload.js";
 import SectionNews from "views/index-sections/SectionNews.js";
 import SectionRepresentations from "views/index-sections/SectionRepresentations.js";
 import RegisterPage from "views/examples/RegisterPage.js";
-
+import SectionGallery from "views/index-sections/SectionGallery.js";
 function Index() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
@@ -59,7 +59,6 @@ function Index() {
       <div className="main">
         <SectionAboutUs />
         <SectionCarousel />
-        
         <SectionNews />
         <SectionRepresentations /> 
         <SectionNucleoIcons />
@@ -71,7 +70,8 @@ function Index() {
         <SectionNotifications />
         <SectionTypography /> 
         <SectionJavaScript />
-        <SectionDownload /> */}
+        <SectionDownload /> 
+        <SectionGallery /> */}
         
       </div>
       <DemoFooter />

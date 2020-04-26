@@ -169,7 +169,7 @@ function SectionTypography() {
                   <Col className="mr-auto ml-auto" md="2" sm="3"  >
                     {/* Button trigger modal */}
                     <a className="btn-round" color="danger" outline type="button" onClick={represent.toggleModal}>
-                      <img alt="..." className="img-thumbnail img-custom img-no-padding img-responsive" src={require("assets/img/faces/" + represent.Abbr + ".png")}/>
+                      <img alt="..." className="img-thumbnail img-custom img-no-padding img-responsive" src={require("assets/img/representations/" + represent.Abbr + ".png")}/>
                       <div className="title text-center">
                         <p><strong>{represent.Name}</strong></p>
                       </div>

@@ -1,5 +1,5 @@
 .carousel-control{
-    background-color: $danger-color;
+    background-color: rgb(73, 73, 73);;
     border-radius: 50%;
     opacity: 1;
     text-shadow: none;
@@ -7,7 +7,7 @@
     &:hover,
     &:focus{
         opacity: 1;
-        background-color: $danger-states-color;
+        background-color: rgb(73, 73, 73);
     }
 }
 
@@ -59,7 +59,7 @@
     border: 0 none;
 }
 .carousel-indicators .active{
-    background-color: $danger-color;
+    background-color: rgb(253, 251, 251);
 }
 .page-carousel:hover{
     .carousel-control.right,

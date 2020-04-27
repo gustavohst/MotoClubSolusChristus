@@ -155,11 +155,12 @@ function SectionTypography() {
   let cont=0;
 
   function changeOpacityOnOver(e) {
-    e.target.style.opacity = 1;
+    
+    e.target.style.opacity = 0.7;
   }
 
   function changeOpacityOnLeave(e) {
-    e.target.style.opacity = 0.7;
+    e.target.style.opacity = 1;
   }
 
   return (

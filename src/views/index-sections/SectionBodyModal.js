@@ -33,16 +33,18 @@ import {
   Row,
   Col
 } from "reactstrap";
+import { isTemplateExpression } from "typescript";
 
 // core components
 
-function SectionProgress() {
+function SectionBodyModal(props) {
   const [activeTab, setActiveTab] = React.useState("1");
   const toggle = tab => {
     if (activeTab !== tab) {
       setActiveTab(tab);
     }
   };
+  
   return (
     <>
       <div className="">
@@ -78,19 +80,22 @@ function SectionProgress() {
               <TabContent activeTab={activeTab} className="text-center">
                 <TabPane tabId="1">
                   <Row>
-                    <Col className="mr-auto ml-auto" md="3" sm="4">
-                    
-                      <div className="title text-center">
-                        <img
-                          alt="..."
-                          className="img-circle img-no-padding img-responsive"
-                          src={require("assets/img/faces/erik-lucatero-2.jpg")}
-                        />
-                        <p><strong>Diretor</strong></p>
-                        <p>Siqueira</p>
-                        <p>(xx)xxxxx-xxxx</p>
-                      </div>
-                    </Col>
+                    {props.directors.Dir != "XXXXX" &&
+                      <Col className="mr-auto ml-auto" md="3" sm="4">
+                      
+                        <div className="title text-center">
+                          <img
+                            alt="..."
+                            className="img-circle img-no-padding img-responsive"
+                            src={require("assets/img/faces/erik-lucatero-2.jpg")}
+                          />
+                          <p><strong>Diretor</strong></p>
+                          <p>{props.directors.Dir}</p>
+                          <p>(xx)xxxxx-xxxx</p>
+                        </div>
+                      </Col>
+                    }
+                    {props.directors.ViceDir != "XXXXX" &&
                     <Col className="mr-auto ml-auto" md="3" sm="4">
                       <div className="title text-center">
                         <img
@@ -99,13 +104,26 @@ function SectionProgress() {
                           src={require("assets/img/faces/ayo-ogunseinde-2.jpg")}
                         />
                         <p><strong>Vice-Diretor</strong></p>
-                        <p>Flávio</p>
+                        <p>{props.directors.ViceDir}</p>
                         <p>(xx)xxxxx-xxxx</p>
                       </div>
                     </Col>
-                    
-                  </Row>
-                  <Row>
+                    }
+                    {props.directors.Communication != "XXXXX" &&
+                    <Col className="mr-auto ml-auto" md="3" sm="4">
+                      <div className="title text-center">
+                        <img
+                          alt="..."
+                          className="img-circle img-no-padding img-responsive"
+                          src={require("assets/img/faces/ayo-ogunseinde-2.jpg")}
+                        />
+                        <p><strong>Dir. Comunicação</strong></p>
+                        <p>{props.directors.Communication}</p>
+                        <p>(xx)xxxxx-xxxx</p>
+                      </div>
+                    </Col>
+                    }
+                  {props.directors.Social != "XXXXX" &&
                     <Col className="mr-auto ml-auto" md="3" sm="4">
                       <div className="title text-center">
                         <img
@@ -114,10 +132,12 @@ function SectionProgress() {
                           src={require("assets/img/faces/clem-onojeghuo-2.jpg")}
                         />
                         <p><strong>Diretor Social</strong></p>
-                        <p>XXX</p>
+                        <p>{props.directors.Social}</p>
                         <p>(xx)xxxxx-xxxx</p>
                       </div>
                     </Col>
+                    }
+                    {props.directors.RoadCaptain != "XXXXX" &&
                     <Col className="mr-auto ml-auto" md="3" sm="4">
                       <div className="title text-center">
                         <img
@@ -125,11 +145,40 @@ function SectionProgress() {
                           className="img-circle img-no-padding img-responsive"
                           src={require("assets/img/faces/clem-onojeghuo-3.jpg")}
                         />
-                        <p><strong>Dir. Comunicação</strong></p>
-                        <p>Padilha</p>
+                        <p><strong>Road Captain</strong></p>
+                        <p>{props.directors.Communication}</p>
                         <p>(xx)xxxxx-xxxx</p>
                       </div>
                     </Col>
+                    }
+                    {props.directors.RoadMissionary != "XXXXX" &&
+                    <Col className="mr-auto ml-auto" md="3" sm="4">
+                      <div className="title text-center">
+                        <img
+                          alt="..."
+                          className="img-circle img-no-padding img-responsive"
+                          src={require("assets/img/faces/ayo-ogunseinde-2.jpg")}
+                        />
+                        <p><strong>Road Missionary</strong></p>
+                        <p>{props.directors.RoadMissionary}</p>
+                        <p>(xx)xxxxx-xxxx</p>
+                      </div>
+                    </Col>
+                    }
+                    {props.directors.Admin != "XXXXX" &&
+                    <Col className="mr-auto ml-auto" md="3" sm="4">
+                      <div className="title text-center">
+                        <img
+                          alt="..."
+                          className="img-circle img-no-padding img-responsive"
+                          src={require("assets/img/faces/ayo-ogunseinde-2.jpg")}
+                        />
+                        <p><strong>Diretor Administrativo</strong></p>
+                        <p>{props.directors.Admin}</p>
+                        <p>(xx)xxxxx-xxxx</p>
+                      </div>
+                    </Col>
+                    }
                   </Row>
                 </TabPane>
                 <TabPane tabId="2">
@@ -144,4 +193,4 @@ function SectionProgress() {
   );
 }
 
-export default SectionProgress;
+export default SectionBodyModal;

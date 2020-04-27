@@ -129,9 +129,42 @@ function SectionTypography() {
     setModalChile(!modalChile);
   };
 
+  // const [modal, setModal] = React.useState(false);
+  // const toggleModal = () => {
+  //   setModal(!modal);
+  // };
+
+  const represents = [
+    { ID: 0, modal: modalPE, toggleModal: toggleModalPE, Name: "Pernambuco", Abbr: "PE", Directors: { Dir: "Siqueira", ViceDir: "Flávio", Social: "XXXXX", Communication: "Padilha", RoadCaptain: "XXXXX", RoadMissionary: "XXXXX", Admin: "XXXXX" } } ,
+    { ID: 1, modal: modalRN, toggleModal: toggleModalRN, Name: "Rio Grande do Norte", Abbr: "RN", Directors: { Dir: "Rildo", ViceDir: "XXXXX", Social: "Caco", Communication: "XXXXX", RoadCaptain: "Hélio", RoadMissionary: "Santiago", Admin: "Cabanas" } },
+    { ID: 2, modal: modalDF, toggleModal: toggleModalDF, Name: "Distrito Federal", Abbr: "DF", Directors: { Dir: "Tigrão", ViceDir: "Guilherme", Social: "Samurai", Communication: "XXXXX", RoadCaptain: "XXXXX", RoadMissionary: "XXXXX", Admin: "XXXXX" } },
+    { ID: 3, modal: modalAM, toggleModal: toggleModalAM, Name: "Amazonas", Abbr: "AM", Directors: { Dir: "Andrade", ViceDir: "XXXXX", Social: "XXXXX", Communication: "XXXXX", RoadCaptain: "XXXXX", RoadMissionary: "XXXXX", Admin: "XXXXX" } },
+    { ID: 4, modal: modalMT, toggleModal: toggleModalMT, Name: "Mato Grosso", Abbr: "MT", Directors: { Dir: "Lunardo", ViceDir: "XXXXX", Social: "XXXXX", Communication: "XXXXX", RoadCaptain: "XXXXX", RoadMissionary: "XXXXX", Admin: "XXXXX" } },
+    { ID: 5, modal: modalPB, toggleModal: toggleModalPB, Name: "Paraíba", Abbr: "PB", Directors: { Dir: "Rubens", ViceDir: "Melqui", Social: "XXXXX", Communication: "XXXXX", RoadCaptain: "XXXXX", RoadMissionary: "XXXXX", Admin: "XXXXX" } },
+    { ID: 6, modal: modalSP, toggleModal: toggleModalSP, Name: "São Paulo", Abbr: "SP", Directors: { Dir: "Moraes", ViceDir: "Uberlan", Social: "XXXXX", Communication: "Haddock", RoadCaptain: "XXXXX", RoadMissionary: "XXXXX", Admin: "XXXXX" } },
+    { ID: 7, modal: modalPR, toggleModal: toggleModalPR, Name: "Paraná", Abbr: "PR", Directors: { Dir: "André", ViceDir: "XXXXX", Social: "XXXXX", Communication: "XXXXX", RoadCaptain: "XXXXX", RoadMissionary: "XXXXX", Admin: "XXXXX" } },
+    { ID: 8, modal: modalRJ, toggleModal: toggleModalRJ, Name: "Rio de Janeiro", Abbr: "RJ", Directors: { Dir: "Daniel", ViceDir: "XXXXX", Social: "XXXXX", Communication: "XXXXX", RoadCaptain: "XXXXX", RoadMissionary: "XXXXX", Admin: "XXXXX" } },
+    { ID: 9, modal: modalMG, toggleModal: toggleModalMG, Name: "Minas Gerais", Abbr: "MG", Directors: { Dir: "Régis", ViceDir: "XXXXX", Social: "XXXXX", Communication: "XXXXX", RoadCaptain: "XXXXX", RoadMissionary: "XXXXX", Admin: "XXXXX" } },
+    { ID: 10, modal: modalCE, toggleModal: toggleModalCE, Name: "Ceará", Abbr: "CE", Directors: { Dir: "Wisley", ViceDir: "XXXXX", Social: "XXXXX", Communication: "XXXXX", RoadCaptain: "XXXXX", RoadMissionary: "XXXXX", Admin: "XXXXX" } },
+    { ID: 11, modal: modalES, toggleModal: toggleModalES, Name: "Espírito Santo", Abbr: "ES", Directors: { Dir: "Estevam", ViceDir: "Herlom", Social: "XXXXX", Communication: "XXXXX", RoadCaptain: "XXXXX", RoadMissionary: "XXXXX", Admin: "XXXXX" } },
+    { ID: 12, modal: modalBA, toggleModal: toggleModalBA, Name: "Bahia", Abbr: "BA", Directors: { Dir: "Mário", ViceDir: "XXXXX", Social: "XXXXX", Communication: "XXXXX", RoadCaptain: "XXXXX", RoadMissionary: "XXXXX", Admin: "XXXXX" } },
+    { ID: 13, modal: modalLisboa, toggleModal: toggleModalLisboa, Name: "Lisboa-PT", Abbr: "lisboa", Directors: { Dir: "Jota", ViceDir: "XXXXX", Social: "XXXXX", Communication: "XXXXX", RoadCaptain: "XXXXX", RoadMissionary: "XXXXX", Admin: "XXXXX" } },
+    { ID: 14, modal: modalGuimaraes, toggleModal: toggleModalGuimaraes, Name: "Guimarães-PT", Abbr: "guimaraes", Directors: { Dir: "Jamerson", ViceDir: "XXXXX", Social: "XXXXX", Communication: "XXXXX", RoadCaptain: "XXXXX", RoadMissionary: "XXXXX", Admin: "XXXXX" } },
+    { ID: 15, modal: modalChile, toggleModal: toggleModalChile, Name: "Chile", Abbr: "chile", Directors: { Dir: "Mago", ViceDir: "XXXXX", Social: "XXXXX", Communication: "XXXXX", RoadCaptain: "XXXXX", RoadMissionary: "XXXXX", Admin: "XXXXX" } }
+  ]
+  let cont=0;
+
+  function changeOpacityOnOver(e) {
+    e.target.style.opacity = 1;
+  }
+
+  function changeOpacityOnLeave(e) {
+    e.target.style.opacity = 0.7;
+  }
+
   return (
     <>
-      <div className="section section-dark">
+      <div className="section">
         <div id="images">
           <Container>
             <div className="title text-center">
@@ -139,407 +172,31 @@ function SectionTypography() {
               <hr />
             </div>
             <Row>
-              {/* Pernambuco */}
-              <Col className="mr-auto ml-auto" md="2" sm="3"  >
-                {/* Button trigger modal */}
-                <a className="btn-round" color="danger" outline type="button" onClick={toggleModalPE}>
-                  <img alt="..." className="img-rounded img-no-padding img-responsive" src={require("assets/img/faces/PE.png")}/>
-                  <div className="title text-center">
-                    <p><strong>Pernambuco</strong></p>
-                  </div>
-                </a>
-                {/* Modal */}
-                <Modal size="lg" isOpen={modalPE} toggle={toggleModalPE}>
-                  <div className="modal-header">
-                    <button aria-label="Close" className="close" type="button" onClick={toggleModalPE}>
-                      <span aria-hidden={true}>×</span>
-                    </button>
-                    <h5 className="modal-title text-center" id="exampleModalLabel"><strong>Pernambuco</strong></h5>
-                  </div>
-                  <div className="modal-body">
-                    <SectionBodyModal />
-                  </div>
-                </Modal>
-              </Col>
-              {/* Rio Grande do Norte */}
-              <Col className="mr-auto ml-auto" md="2" sm="3"  >
-                {/* Button trigger modal */}
-                <a className="btn-round" color="danger" outline type="button" onClick={toggleModalRN}>
-                  <img alt="..." className="img-rounded img-no-padding img-responsive" src={require("assets/img/faces/RN.png")}/>
-                  <div className="title text-center">
-                    <p><strong>Rio Grande do Norte</strong></p>
-                  </div>
-                </a>
-                {/* Modal */}
-                <Modal isOpen={modalRN} toggle={toggleModalRN}>
-                  <div className="modal-header">
-                    <button aria-label="Close" className="close" type="button" onClick={toggleModalRN}>
-                      <span aria-hidden={true}>×</span>
-                    </button>
-                    <h5 className="modal-title text-center" id="exampleModalLabel"><strong>Rio Grande do Norte</strong></h5>
-                  </div>
-                  <div className="modal-body">
-                    <div className="title text-center">
-                      <p>Diretor: Rildo</p>
-                      <p>(xx)xxxxx-xxxx</p>
-                    </div>
-                  </div>
-                </Modal>
-              </Col>
-              {/* Distrito Federal */}
-              <Col className="mr-auto ml-auto" md="2" sm="3"  >
-                {/* Button trigger modal */}
-                <a className="btn-round" color="danger" outline type="button" onClick={toggleModalDF}>
-                  <img alt="..." className="img-rounded img-no-padding img-responsive" src={require("assets/img/faces/DF.png")}/>
-                  <div className="title text-center">
-                    <p><strong>Distrito Federal</strong></p>
-                  </div>
-                </a>
-                {/* Modal */}
-                <Modal isOpen={modalDF} toggle={toggleModalDF}>
-                  <div className="modal-header">
-                    <button aria-label="Close" className="close" type="button" onClick={toggleModalDF}>
-                      <span aria-hidden={true}>×</span>
-                    </button>
-                    <h5 className="modal-title text-center" id="exampleModalLabel"><strong>Distrito Federal</strong></h5>
-                  </div>
-                  <div className="modal-body">
-                    <div className="title text-center">
-                      <p>Diretor: Tigrão</p>
-                      <p>(xx)xxxxx-xxxx</p>
-                    </div>
-                  </div>
-                </Modal>
-              </Col>
-              {/* Amazonas */}
-              <Col className="mr-auto ml-auto" md="2" sm="3"  >
-                {/* Button trigger modal */}
-                <a className="btn-round" color="danger" outline type="button" onClick={toggleModalAM}>
-                  <img alt="..." className="img-rounded img-no-padding img-responsive" src={require("assets/img/faces/AM.png")}/>
-                  <div className="title text-center">
-                    <p><strong>Amazonas</strong></p>
-                  </div>
-                </a>
-                {/* Modal */}
-                <Modal isOpen={modalAM} toggle={toggleModalAM}>
-                  <div className="modal-header">
-                    <button aria-label="Close" className="close" type="button" onClick={toggleModalAM}>
-                      <span aria-hidden={true}>×</span>
-                    </button>
-                    <h5 className="modal-title text-center" id="exampleModalLabel"><strong>Amazonas</strong></h5>
-                  </div>
-                  <div className="modal-body">
-                    <div className="title text-center">
-                      <p>Diretor: Andrade</p>
-                      <p>(xx)xxxxx-xxxx</p>
-                    </div>
-                  </div>
-                </Modal>
-              </Col>
-              {/* Mato Grosso */}
-              <Col className="mr-auto ml-auto" md="2" sm="3"  >
-                {/* Button trigger modal */}
-                <a className="btn-round" color="danger" outline type="button" onClick={toggleModalMT}>
-                  <img alt="..." className="img-rounded img-no-padding img-responsive" src={require("assets/img/faces/MT.png")}/>
-                  <div className="title text-center">
-                    <p><strong>Mato Grosso</strong></p>
-                  </div>
-                </a>
-                {/* Modal */}
-                <Modal isOpen={modalMT} toggle={toggleModalMT}>
-                  <div className="modal-header">
-                    <button aria-label="Close" className="close" type="button" onClick={toggleModalMT}>
-                      <span aria-hidden={true}>×</span>
-                    </button>
-                    <h5 className="modal-title text-center" id="exampleModalLabel"><strong>Mato Grosso</strong></h5>
-                  </div>
-                  <div className="modal-body">
-                    <div className="title text-center">
-                      <p>Diretor: Lunardo</p>
-                      <p>(xx)xxxxx-xxxx</p>
-                    </div>
-                  </div>
-                </Modal>
-              </Col>
-              {/* Paraíba */}
-              <Col className="mr-auto ml-auto" md="2" sm="3"  >
-                {/* Button trigger modal */}
-                <a className="btn-round" color="danger" outline type="button" onClick={toggleModalPB}>
-                  <img alt="..." className="img-rounded img-no-padding img-responsive" src={require("assets/img/faces/PB.png")}/>
-                  <div className="title text-center">
-                    <p><strong>Paraíba</strong></p>
-                  </div>
-                </a>
-                {/* Modal */}
-                <Modal isOpen={modalPB} toggle={toggleModalPB}>
-                  <div className="modal-header">
-                    <button aria-label="Close" className="close" type="button" onClick={toggleModalPB}>
-                      <span aria-hidden={true}>×</span>
-                    </button>
-                    <h5 className="modal-title text-center" id="exampleModalLabel"><strong>Paraíba</strong></h5>
-                  </div>
-                  <div className="modal-body">
-                    <div className="title text-center">
-                      <p>Diretor: Rubens</p>
-                      <p>(xx)xxxxx-xxxx</p>
-                    </div>
-                  </div>
-                </Modal>
-              </Col>
-            </Row>
-            <Row>
-              {/* São Paulo */}
-              <Col className="mr-auto ml-auto" md="2" sm="3"  >
-                {/* Button trigger modal */}
-                <a className="btn-round" color="danger" outline type="button" onClick={toggleModalSP}>
-                  <img alt="..." className="img-rounded img-no-padding img-responsive" src={require("assets/img/faces/SP.png")}/>
-                  <div className="title text-center">
-                    <p><strong>São Paulo</strong></p>
-                  </div>
-                </a>
-                {/* Modal */}
-                <Modal isOpen={modalSP} toggle={toggleModalSP}>
-                  <div className="modal-header">
-                    <button aria-label="Close" className="close" type="button" onClick={toggleModalSP}>
-                      <span aria-hidden={true}>×</span>
-                    </button>
-                    <h5 className="modal-title text-center" id="exampleModalLabel"><strong>São Paulo</strong></h5>
-                  </div>
-                  <div className="modal-body">
-                    <div className="title text-center">
-                      <p>Diretor: Moraes</p>
-                      <p>(xx)xxxxx-xxxx</p>
-                    </div>
-                  </div>
-                </Modal>
-              </Col>
-              {/* Paraná */}
-              <Col className="mr-auto ml-auto" md="2" sm="3"  >
-                {/* Button trigger modal */}
-                <a className="btn-round" color="danger" outline type="button" onClick={toggleModalPR}>
-                  <img alt="..." className="img-rounded img-no-padding img-responsive" src={require("assets/img/faces/PR.png")}/>
-                  <div className="title text-center">
-                    <p><strong>Paraná</strong></p>
-                  </div>
-                </a>
-                {/* Modal */}
-                <Modal isOpen={modalPR} toggle={toggleModalPR}>
-                  <div className="modal-header">
-                    <button aria-label="Close" className="close" type="button" onClick={toggleModalPR}>
-                      <span aria-hidden={true}>×</span>
-                    </button>
-                    <h5 className="modal-title text-center" id="exampleModalLabel"><strong>Paraná</strong></h5>
-                  </div>
-                  <div className="modal-body">
-                    <div className="title text-center">
-                      <p>Diretor: André</p>
-                      <p>(xx)xxxxx-xxxx</p>
-                    </div>
-                  </div>
-                </Modal>
-              </Col>
-              {/* Rio de Janeiro */}
-              <Col className="mr-auto ml-auto" md="2" sm="3"  >
-                {/* Button trigger modal */}
-                <a className="btn-round" color="danger" outline type="button" onClick={toggleModalRJ}>
-                  <img alt="..." className="img-rounded img-no-padding img-responsive" src={require("assets/img/faces/RJ.png")}/>
-                  <div className="title text-center">
-                    <p><strong>Rio de Janeiro</strong></p>
-                  </div>
-                </a>
-                {/* Modal */}
-                <Modal isOpen={modalRJ} toggle={toggleModalRJ}>
-                  <div className="modal-header">
-                    <button aria-label="Close" className="close" type="button" onClick={toggleModalRJ}>
-                      <span aria-hidden={true}>×</span>
-                    </button>
-                    <h5 className="modal-title text-center" id="exampleModalLabel"><strong>Rio de Janeiro</strong></h5>
-                  </div>
-                  <div className="modal-body">
-                    <div className="title text-center">
-                      <p>Diretor: Daniel</p>
-                      <p>(xx)xxxxx-xxxx</p>
-                    </div>
-                  </div>
-                </Modal>
-              </Col>
-              {/* Minas Gerais */}
-              <Col className="mr-auto ml-auto" md="2" sm="3"  >
-                {/* Button trigger modal */}
-                <a className="btn-round" color="danger" outline type="button" onClick={toggleModalMG}>
-                  <img alt="..." className="img-rounded img-no-padding img-responsive" src={require("assets/img/faces/MG.png")}/>
-                  <div className="title text-center">
-                    <p><strong>Minas Gerais</strong></p>
-                  </div>
-                </a>
-                {/* Modal */}
-                <Modal isOpen={modalMG} toggle={toggleModalMG}>
-                  <div className="modal-header">
-                    <button aria-label="Close" className="close" type="button" onClick={toggleModalMG}>
-                      <span aria-hidden={true}>×</span>
-                    </button>
-                    <h5 className="modal-title text-center" id="exampleModalLabel"><strong>Minas Gerais</strong></h5>
-                  </div>
-                  <div className="modal-body">
-                    <div className="title text-center">
-                      <p>Diretor: Régis</p>
-                      <p>(xx)xxxxx-xxxx</p>
-                    </div>
-                  </div>
-                </Modal>
-              </Col>
-              {/* Ceará */}
-              <Col className="mr-auto ml-auto" md="2" sm="3"  >
-                {/* Button trigger modal */}
-                <a className="btn-round" color="danger" outline type="button" onClick={toggleModalCE}>
-                  <img alt="..." className="img-rounded img-no-padding img-responsive" src={require("assets/img/faces/CE.png")}/>
-                  <div className="title text-center">
-                    <p><strong>Ceará</strong></p>
-                  </div>
-                </a>
-                {/* Modal */}
-                <Modal isOpen={modalCE} toggle={toggleModalCE}>
-                  <div className="modal-header">
-                    <button aria-label="Close" className="close" type="button" onClick={toggleModalCE}>
-                      <span aria-hidden={true}>×</span>
-                    </button>
-                    <h5 className="modal-title text-center" id="exampleModalLabel"><strong>Ceará</strong></h5>
-                  </div>
-                  <div className="modal-body">
-                    <div className="title text-center">
-                      <p>Diretor: Wisley</p>
-                      <p>(xx)xxxxx-xxxx</p>
-                    </div>
-                  </div>
-                </Modal>
-              </Col>
-              {/* Bahia */}
-              <Col className="mr-auto ml-auto" md="2" sm="3"  >
-                {/* Button trigger modal */}
-                <a className="btn-round" color="danger" outline type="button" onClick={toggleModalBA}>
-                  <img alt="..." className="img-rounded img-no-padding img-responsive" src={require("assets/img/faces/BA.png")}/>
-                  <div className="title text-center">
-                    <p><strong>Bahia</strong></p>
-                  </div>
-                </a>
-                {/* Modal */}
-                <Modal isOpen={modalBA} toggle={toggleModalBA}>
-                  <div className="modal-header">
-                    <button aria-label="Close" className="close" type="button" onClick={toggleModalBA}>
-                      <span aria-hidden={true}>×</span>
-                    </button>
-                    <h5 className="modal-title text-center" id="exampleModalLabel"><strong>Bahia</strong></h5>
-                  </div>
-                  <div className="modal-body">
-                    <div className="title text-center">
-                      <p>Diretor: Mário</p>
-                      <p>(xx)xxxxx-xxxx</p>
-                    </div>
-                  </div>
-                </Modal>
-              </Col>
-            </Row>
-            <Row>
-              {/* Espírito Santo */}
-              <Col className="mr-auto ml-auto" md="2" sm="3"  >
-                {/* Button trigger modal */}
-                <a className="btn-round" color="danger" outline type="button" onClick={toggleModalES}>
-                  <img alt="..." className="img-rounded img-no-padding img-responsive" src={require("assets/img/faces/ES.png")}/>
-                  <div className="title text-center">
-                    <p><strong>Espírito Santo</strong></p>
-                  </div>
-                </a>
-                {/* Modal */}
-                <Modal isOpen={modalES} toggle={toggleModalES}>
-                  <div className="modal-header">
-                    <button aria-label="Close" className="close" type="button" onClick={toggleModalES}>
-                      <span aria-hidden={true}>×</span>
-                    </button>
-                    <h5 className="modal-title text-center" id="exampleModalLabel"><strong>Espírito Santo</strong></h5>
-                  </div>
-                  <div className="modal-body">
-                    <div className="title text-center">
-                      <p>Diretor: Juvenal</p>
-                      <p>(xx)xxxxx-xxxx</p>
-                    </div>
-                  </div>
-                </Modal>
-              </Col>
-              {/* Lisboa */}
-              <Col className="mr-auto ml-auto" md="2" sm="3"  >
-                {/* Button trigger modal */}
-                <a className="btn-round" color="danger" outline type="button" onClick={toggleModalLisboa}>
-                  <img alt="..." className="img-rounded img-no-padding img-responsive" src={require("assets/img/faces/lisboa.png")}/>
-                  <div className="title text-center">
-                    <p><strong>Lisboa-PT</strong></p>
-                  </div>
-                </a>
-                {/* Modal */}
-                <Modal isOpen={modalLisboa} toggle={toggleModalLisboa}>
-                  <div className="modal-header">
-                    <button aria-label="Close" className="close" type="button" onClick={toggleModalLisboa}>
-                      <span aria-hidden={true}>×</span>
-                    </button>
-                    <h5 className="modal-title text-center" id="exampleModalLabel"><strong>Lisboa-PT</strong></h5>
-                  </div>
-                  <div className="modal-body">
-                    <div className="title text-center">
-                      <p>Diretor: Jota</p>
-                      <p>(xx)xxxxx-xxxx</p>
-                    </div>
-                  </div>
-                </Modal>
-              </Col>
-              {/* Guimaraes */}
-              <Col className="mr-auto ml-auto" md="2" sm="3"  >
-                {/* Button trigger modal */}
-                <a className="btn-round" color="danger" outline type="button" onClick={toggleModalGuimaraes}>
-                  <img alt="..." className="img-rounded img-no-padding img-responsive" src={require("assets/img/faces/guimaraes.png")}/>
-                  <div className="title text-center">
-                    <p><strong>Guimarães-PT</strong></p>
-                  </div>
-                </a>
-                {/* Modal */}
-                <Modal isOpen={modalGuimaraes} toggle={toggleModalGuimaraes}>
-                  <div className="modal-header">
-                    <button aria-label="Close" className="close" type="button" onClick={toggleModalGuimaraes}>
-                      <span aria-hidden={true}>×</span>
-                    </button>
-                    <h5 className="modal-title text-center" id="exampleModalLabel"><strong>Guimarães-PT</strong></h5>
-                  </div>
-                  <div className="modal-body">
-                    <div className="title text-center">
-                      <p>Diretor: Jamerson</p>
-                      <p>(xx)xxxxx-xxxx</p>
-                    </div>
-                  </div>
-                </Modal>
-              </Col>
-              {/* Chile */}
-              <Col className="mr-auto ml-auto" md="2" sm="3"  >
-                {/* Button trigger modal */}
-                <a className="btn-round" color="danger" outline type="button" onClick={toggleModalChile}>
-                  <img alt="..." className="img-rounded img-no-padding img-responsive" src={require("assets/img/faces/chile.png")}/>
-                  <div className="title text-center">
-                    <p><strong>Chile</strong></p>
-                  </div>
-                </a>
-                {/* Modal */}
-                <Modal isOpen={modalChile} toggle={toggleModalChile}>
-                  <div className="modal-header">
-                    <button aria-label="Close" className="close" type="button" onClick={toggleModalChile}>
-                      <span aria-hidden={true}>×</span>
-                    </button>
-                    <h5 className="modal-title text-center" id="exampleModalLabel"><strong>Chile</strong></h5>
-                  </div>
-                  <div className="modal-body">
-                    <div className="title text-center">
-                      <p>Diretor: Mago</p>
-                      <p>(xx)xxxxx-xxxx</p>
-                    </div>
-                  </div>
-                </Modal>
-              </Col>
+              {
+                represents.map(represent => (
+                  <Col className="mr-auto ml-auto" md="2" sm="3"  >
+                    {/* Button trigger modal */}
+                    <a className="btn-round" color="danger" outline type="button" onClick={represent.toggleModal}>
+                      <img alt="..." className="img-thumbnail img-custom img-no-padding img-responsive" onMouseLeave={changeOpacityOnLeave} onMouseOver={changeOpacityOnOver} src={require("assets/img/representations/" + represent.Abbr + ".png")}/>
+                      <div className="title text-center">
+                        <p><strong>{represent.Name}</strong></p>
+                      </div>
+                    </a>
+                    {/* Modal */}
+                    <Modal size="lg" isOpen={represent.modal} toggle={represent.toggleModal}>
+                      <div className="modal-header">
+                        <button aria-label="Close" className="close" type="button" onClick={represent.toggleModal}>
+                          <span aria-hidden={true}>×</span>
+                        </button>
+                        <h5 className="modal-title text-center" id="exampleModalLabel"><strong>{represent.Name}</strong></h5>
+                      </div>
+                      <div className="modal-body">
+                        <SectionBodyModal directors={represent.Directors} />
+                      </div>
+                    </Modal>
+                  </Col>
+                ))
+              }
             </Row>
           </Container>
         </div>
@@ -547,5 +204,7 @@ function SectionTypography() {
     </>
   );
 }
+
+
 
 export default SectionTypography;

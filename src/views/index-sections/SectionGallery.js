@@ -34,6 +34,7 @@ import {
 
 const items = [
   { src: require("assets/img/carousel/01.webp"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/02.webp"), altText: "Solus Christus" },
   { src: require("assets/img/carousel/03.webp"), altText: "Solus Christus" },
   { src: require("assets/img/carousel/04.webp"), altText: "Solus Christus" },
   { src: require("assets/img/carousel/05.webp"), altText: "Solus Christus" },
@@ -43,7 +44,7 @@ const items = [
   { src: require("assets/img/carousel/09.webp"), altText: "Solus Christus" }
 ];
 
-function SectionCarousel() {
+function SectionGallery() {
   const [activeIndex, setActiveIndex] = React.useState(0);
   const [animating, setAnimating] = React.useState(false);
   const onExiting = () => {
@@ -70,64 +71,16 @@ function SectionCarousel() {
     <>
       <div className="pt-o" id="carousel">
         <Container>
-          <Row>
-            <Col className="ml-auto mr-auto" md="12">
-              <Card className="page-carousel">
-                <Carousel
-                  activeIndex={activeIndex}
-                  next={next}
-                  previous={previous}
-                >
-                  <CarouselIndicators
-                    items={items}
-                    activeIndex={activeIndex}
-                    onClickHandler={goToIndex}
-                  />
-                  {items.map(item => {
-                    return (
-                    <CarouselItem
-                        onExiting={onExiting}
-                        onExited={onExited}
-                        key={item.src}
-                      >
-                        <img src={item.src} alt={item.altText} />
-                        <CarouselCaption
-                          //captionText={item.caption}
-                          captionHeader=""
-                        />
-                      </CarouselItem>
-                    );
-                  })}
-                  <a
-                    className="left carousel-control carousel-control-prev"
-                    data-slide="prev"
-                    href="#pablo"
-                    onClick={e => {
-                      e.preventDefault();
-                      previous();
-                    }}
-                    role="button"
-                  >
-                    <span className="fa fa-angle-left" />
-                    <span className="sr-only">Previous</span>
-                  </a>
-                  <a
-                    className="right carousel-control carousel-control-next"
-                    data-slide="next"
-                    href="#pablo"
-                    onClick={e => {
-                      e.preventDefault();
-                      next();
-                    }}
-                    role="button"
-                  >
-                    <span className="fa fa-angle-right" />
-                    <span className="sr-only">Next</span>
-                  </a>
-                </Carousel>
-              </Card>
-            </Col>
-          </Row>
+        <Row>
+        
+          {items.map(item => (
+        <Col className="mr-auto ml-auto" md="12" >      
+            
+                <img src={item.src} alt={item.altText} className="img-gallery-custom  img-responsive" />
+                </Col>  
+          ))}
+          
+            </Row>
         </Container>
         <br />
       </div>{" "}
@@ -135,4 +88,4 @@ function SectionCarousel() {
   );
 }
 
-export default SectionCarousel;
+export default SectionGallery;

@@ -39,7 +39,7 @@ import {
 function SectionAboutUs() {
   return (
     <>
-      <div className=" section-buttons">
+      <div className="section section-buttons">
         <Container>
           <div className="title text-center">
             <h2><strong>Nossa história</strong></h2>

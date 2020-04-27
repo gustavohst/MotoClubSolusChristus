@@ -46,9 +46,9 @@ function SectionAboutUs() {
               <h2><strong>Notícias</strong></h2>
               <hr />
             </div>
-            <div id="buttons">
-              <div className="title text-center">
-                <h4>Aniversário do Solus Christus</h4>
+            <div id="buttons">  
+              <div className="newsContainer">    
+                <img className="newsBanner" src={require("assets/img/BannerNoticias.png")} />
               </div>
             </div>
           </Container>

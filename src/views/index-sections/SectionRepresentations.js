@@ -154,6 +154,14 @@ function SectionTypography() {
   ]
   let cont=0;
 
+  function changeOpacityOnOver(e) {
+    e.target.style.opacity = 1;
+  }
+
+  function changeOpacityOnLeave(e) {
+    e.target.style.opacity = 0.7;
+  }
+
   return (
     <>
       <div className="section">
@@ -169,7 +177,7 @@ function SectionTypography() {
                   <Col className="mr-auto ml-auto" md="2" sm="3"  >
                     {/* Button trigger modal */}
                     <a className="btn-round" color="danger" outline type="button" onClick={represent.toggleModal}>
-                      <img alt="..." className="img-thumbnail img-custom img-no-padding img-responsive" src={require("assets/img/representations/" + represent.Abbr + ".png")}/>
+                      <img alt="..." className="img-thumbnail img-custom img-no-padding img-responsive" onMouseLeave={changeOpacityOnLeave} onMouseOver={changeOpacityOnOver} src={require("assets/img/representations/" + represent.Abbr + ".png")}/>
                       <div className="title text-center">
                         <p><strong>{represent.Name}</strong></p>
                       </div>
@@ -196,5 +204,7 @@ function SectionTypography() {
     </>
   );
 }
+
+
 
 export default SectionTypography;

@@ -48,7 +48,7 @@ function SectionAboutUs() {
             </div>
             <div id="buttons">  
               <div className="newsContainer">    
-                <img className="newsBanner" src={require("assets/img/BannerNoticias.png")} />
+                <img className="newsBanner" src={require("assets/img/bannerNoticias.png")} />
               </div>
             </div>
           </Container>

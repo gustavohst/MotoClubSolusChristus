@@ -19,6 +19,9 @@
 import React from "react";
 // nodejs library that concatenates strings
 import classnames from "classnames";
+
+import ReactAudioPlayer from 'react-audio-player';
+
 // reactstrap components
 import {
   Button,
@@ -64,7 +67,8 @@ function IndexNavbar() {
   return (
     <Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
       <Container>
-        <div className="navbar-translate">
+        <div className="navbar-translate margin-default-left">
+          
           <NavbarBrand
             data-placement="bottom"
             href="/index"
@@ -85,6 +89,7 @@ function IndexNavbar() {
             <span className="navbar-toggler-bar bar3" />
           </button>
         </div>
+        </Container>
         <Collapse
           className="justify-content-end"
           navbar
@@ -124,21 +129,13 @@ function IndexNavbar() {
                 <p className="d-lg-none">Instagram</p>
               </NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://solusmcc.radiostream321.com"
-                target="_blank"
-                title="Nossa rádio"
-              >
-                <i class="fa fa-headphones"></i>
-                <p className="d-lg-none">Radio</p>
-              </NavLink>
-            </NavItem>
           </Nav>
+          <ReactAudioPlayer volume="1.0" autoPlay title="Rádio Solus Christus" className="radio-color margin-default-right" src="http://109.169.76.155:25073/;stream.mp3" controls  />
         </Collapse>
-      </Container>
+      
+      
     </Navbar>
+    
   );
 }
 

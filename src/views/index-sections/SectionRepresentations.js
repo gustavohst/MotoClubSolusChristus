@@ -165,7 +165,7 @@ function SectionTypography() {
 
   return (
     <>
-      <div className="section">
+      <div className="section section-scmcc-grey">
         <div id="images">
           <Container>
             <div className="title text-center">

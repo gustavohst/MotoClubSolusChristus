@@ -124,6 +124,17 @@ function IndexNavbar() {
                 <p className="d-lg-none">Instagram</p>
               </NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink
+                data-placement="bottom"
+                href="https://solusmcc.radiostream321.com"
+                target="_blank"
+                title="Nossa rádio"
+              >
+                <i class="fa fa-headphones"></i>
+                <p className="d-lg-none">Radio</p>
+              </NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </Container>

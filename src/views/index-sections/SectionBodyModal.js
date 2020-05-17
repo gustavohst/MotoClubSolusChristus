@@ -83,7 +83,7 @@ function SectionBodyModal(props) {
                     {props.directors.Dir != "XXXXX" &&
                       <Col className="mr-auto ml-auto" md="3" sm="4">
                       
-                        <div className="title text-center">
+                        <div>
                           <img
                             alt="..."
                             className="img-circle img-no-padding img-responsive"
@@ -97,7 +97,7 @@ function SectionBodyModal(props) {
                     }
                     {props.directors.ViceDir != "XXXXX" &&
                     <Col className="mr-auto ml-auto" md="3" sm="4">
-                      <div className="title text-center">
+                      <div>
                         <img
                           alt="..."
                           className="img-circle img-no-padding img-responsive"
@@ -111,7 +111,7 @@ function SectionBodyModal(props) {
                     }
                     {props.directors.Communication != "XXXXX" &&
                     <Col className="mr-auto ml-auto" md="3" sm="4">
-                      <div className="title text-center">
+                      <div>
                         <img
                           alt="..."
                           className="img-circle img-no-padding img-responsive"
@@ -125,7 +125,7 @@ function SectionBodyModal(props) {
                     }
                   {props.directors.Social != "XXXXX" &&
                     <Col className="mr-auto ml-auto" md="3" sm="4">
-                      <div className="title text-center">
+                      <div>
                         <img
                           alt="..."
                           className="img-circle img-no-padding img-responsive"
@@ -139,7 +139,7 @@ function SectionBodyModal(props) {
                     }
                     {props.directors.RoadCaptain != "XXXXX" &&
                     <Col className="mr-auto ml-auto" md="3" sm="4">
-                      <div className="title text-center">
+                      <div>
                         <img
                           alt="..."
                           className="img-circle img-no-padding img-responsive"
@@ -153,7 +153,7 @@ function SectionBodyModal(props) {
                     }
                     {props.directors.RoadMissionary != "XXXXX" &&
                     <Col className="mr-auto ml-auto" md="3" sm="4">
-                      <div className="title text-center">
+                      <div>
                         <img
                           alt="..."
                           className="img-circle img-no-padding img-responsive"
@@ -167,7 +167,7 @@ function SectionBodyModal(props) {
                     }
                     {props.directors.Admin != "XXXXX" &&
                     <Col className="mr-auto ml-auto" md="3" sm="4">
-                      <div className="title text-center">
+                      <div>
                         <img
                           alt="..."
                           className="img-circle img-no-padding img-responsive"

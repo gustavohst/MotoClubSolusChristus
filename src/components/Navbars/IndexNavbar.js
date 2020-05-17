@@ -71,7 +71,7 @@ function IndexNavbar() {
           <NavbarBrand className="font-size-custom"
             data-placement="bottom"
             href="/index"
-            target="_blank"
+            target="_self"
             title="Solus Christus MCC"
           >
           Solus Christus MCC

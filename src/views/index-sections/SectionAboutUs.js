@@ -50,7 +50,7 @@ function SectionAboutUs() {
               <h3>
                 <div className="sc-about-content">
                   <p>
-                    Em <strong>04</strong> de dezembro de <strong>2018</strong>, após <i>Siqueira</i> sair de seu ex moto clube e ficar cumprindo um luto estipulado 
+                    Em <i>04</i> de dezembro de <i>2018</i>, após <i>Siqueira</i> sair de seu ex moto clube e ficar cumprindo um luto estipulado 
                     de 12 meses, o mesmo no início de março de 2019, fez contato com outro moto clube, com a finalidade de, no término de seu luto adentrar nas fileiras daquele 
                     clube e levantar sua bandeira no estado de Pernambuco. Demonstrando assim, a vontade de seguir seu chamado evangelístico.
                   </p> 
@@ -63,12 +63,12 @@ function SectionAboutUs() {
                       No entanto, o projeto de adentrar neste clube não foi continuado.
                     </p>
                     <p>
-                      Entre os dias <strong>26</strong> e <strong>29</strong> de maio, <i>Paulo Paiva</i> e <i>Siqueira</i>, elaboraram o rascunho do
-                      <i> Estatuto</i> e <i>Logomarca</i> do pretendido <strong>SOLUS CHRISTUS MG (PE)</strong>. Em <strong>30</strong> de março de <strong>2019</strong>, convocamos a 
+                      Entre os dias <i>26</i> e <i>29</i> de maio, <i>Paulo Paiva</i> e <i>Siqueira</i>, elaboraram o rascunho do
+                      <i> Estatuto</i> e <i>Logomarca</i> do pretendido <strong>SOLUS CHRISTUS MG (PE)</strong>. Em <i>30</i> de março de <i>2019</i>, convocamos a 
                       primeira reunião na casa de <i>Siqueira</i> e juntamente com <i>Paulo Paiva</i> que desenvolveu a arte final, foi apresentado ao grupo o projeto 
                       <strong> SOLUS CHRISTUS MCC</strong>. Presentes na reunião de fundação estavam: <i>Carioca</i>, <i>Fernando</i>, <i>Coutinho</i>, 
                       <i> Silas</i>, <i>Siqueira</i>, <i>Shina</i> e <i>Paulo Paiva</i>. Como se tratava de um motoclube cristão, ficou então acordado 
-                      no dia <strong>30</strong> de março de <strong>2019</strong>, que o presidente do <strong>SOLUS CHRISTUS MCC</strong>, seria o nosso <strong>Senhor JESUS CRISTO </strong> 
+                      no dia <i>30</i> de março de <i>2019</i>, que o presidente do <strong>SOLUS CHRISTUS MCC</strong>, seria o nosso <strong>Senhor JESUS CRISTO </strong> 
                       e que nosso clube não seria para honrar homens, mas sim para <strong>Cristo</strong> e que toda regra que viesse a atrapalhar nossa atividade fim, deveria ser retirada 
                       do estatuto, dessa maneira foi feito um estatuto onde o fardo é leve e o julgo suave. Devemos então agradar somente a <strong>Deus</strong> e não a homens, 
                       temos compromisso com a causa biker, porém esta nunca poderá ser maior que as <strong>Escrituras Sagradas</strong>. Agora tinhamos o projeto <strong>SCMCC</strong>, 
@@ -76,7 +76,7 @@ function SectionAboutUs() {
                       de levantar a bandeira. No mês seguinte o <i>Pr. Moraes (SP)</i> e o <i>Pr. Rúbem (PB)</i>, resolveram sair de seus antigos moto clubes 
                       e agregaram ao <strong>SCMCC</strong>, vale salientar que seus antigos moto clubes em seu estatuto, não havia luto para se cumprir. De mesma forma 
                       <i>Tigrão (DF)</i> e <i>Vitorino (DF)</i>, estes sem luto vieram somar ao novo clube. Apesar de não termos lutos a cumprir, resolvemos 
-                      esperar até o dia <strong>25</strong> de junho de <strong>2019</strong> para o levantamento de nossa bandeira, tendo como padrinhos o 
+                      esperar até o dia <i>25</i> de junho de <i>2019</i> para o levantamento de nossa bandeira, tendo como padrinhos o 
                       <strong> OURIÇOS DO ASLFALTO MC (PE)</strong>.
                     </p>
                   </div>

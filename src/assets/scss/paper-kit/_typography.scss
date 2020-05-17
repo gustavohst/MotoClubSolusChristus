@@ -82,6 +82,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 .description{
     color: $dark-gray;
 }
+
 blockquote small{
     font-style: normal;
 }
@@ -175,4 +176,11 @@ blockquote small{
     max-height: 1500px;
 }
 
+@font-face {
+    font-family: 'Biker From Hell';
+    src: url('../fonts/biker_from_hell-webfont.woff');
 
+    src: 
+        url('../fonts/biker_from_hell-webfont.woff') format('woff'),
+        url("../fonts/biker_from_hell-webfont.otf") format("opentype");
+  }

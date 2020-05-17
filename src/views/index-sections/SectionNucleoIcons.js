@@ -38,7 +38,7 @@ function SectionNucleoIcons() {
               <br />
               <h3 className="title">Email</h3>
               <br />
-              <a href="mailto:soluschristusmcc@gmail.com?subject=Contato Site"><p className="description">soluschristusmcc@gmail.com</p></a>
+              <a href="mailto:soluschristusmcc@gmail.com?subject=Contato Site"><p className="description link-hover-effect">soluschristusmcc@gmail.com</p></a>
               {/* <Button
                 className="btn-round"
                 color="danger"

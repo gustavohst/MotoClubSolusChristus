@@ -83,6 +83,13 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     color: $dark-gray;
 }
 
+a .link-hover-effect{
+    transition: color 0.5s ease;
+}
+a .link-hover-effect:hover{
+    color: #F3F3F3
+}
+
 blockquote small{
     font-style: normal;
 }

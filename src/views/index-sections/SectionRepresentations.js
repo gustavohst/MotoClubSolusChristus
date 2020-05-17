@@ -35,104 +35,67 @@ function SectionTypography() {
   //Constants Modal 
   // Pernambuco
   const [modalPE, setModalPE] = React.useState(false);
-  const toggleModalPE = () => {
-    setModalPE(!modalPE);
-  };
+  const toggleModalPE = () => { setModalPE(!modalPE); };
 
   // Rio Grande do Norte
   const [modalRN, setModalRN] = React.useState(false);
-  const toggleModalRN = () => {
-    setModalRN(!modalRN);
-  };
+  const toggleModalRN = () => { setModalRN(!modalRN); };
 
   // Distrito Federal
   const [modalDF, setModalDF] = React.useState(false);
-  const toggleModalDF = () => {
-    setModalDF(!modalDF);
-  };
+  const toggleModalDF = () => { setModalDF(!modalDF); };
 
   // Amazonas
   const [modalAM, setModalAM] = React.useState(false);
-  const toggleModalAM = () => {
-    setModalAM(!modalAM);
-  };
+  const toggleModalAM = () => { setModalAM(!modalAM); };
   
   // Mato Grosso
   const [modalMT, setModalMT] = React.useState(false);
-  const toggleModalMT = () => {
-    setModalMT(!modalMT);
-  };
+  const toggleModalMT = () => { setModalMT(!modalMT); };
 
   // Paraíba
   const [modalPB, setModalPB] = React.useState(false);
-  const toggleModalPB = () => {
-    setModalPB(!modalPB);
-  };
+  const toggleModalPB = () => { setModalPB(!modalPB); };
 
   // São Paulo
   const [modalSP, setModalSP] = React.useState(false);
-  const toggleModalSP = () => {
-    setModalSP(!modalSP);
-  };
+  const toggleModalSP = () => { setModalSP(!modalSP); };
 
   // Paraná
   const [modalPR, setModalPR] = React.useState(false);
-  const toggleModalPR = () => {
-    setModalPR(!modalPR);
-  };
+  const toggleModalPR = () => { setModalPR(!modalPR); };
 
   // Rio de Janeiro
   const [modalRJ, setModalRJ] = React.useState(false);
-  const toggleModalRJ = () => {
-    setModalRJ(!modalRJ);
-  };
+  const toggleModalRJ = () => { setModalRJ(!modalRJ); };
   
   // Minas Gerais
   const [modalMG, setModalMG] = React.useState(false);
-  const toggleModalMG = () => {
-    setModalMG(!modalMG);
-  };
+  const toggleModalMG = () => { setModalMG(!modalMG); };
 
   // Ceará
   const [modalCE, setModalCE] = React.useState(false);
-  const toggleModalCE = () => {
-    setModalCE(!modalCE);
-  };
+  const toggleModalCE = () => { setModalCE(!modalCE); };
     
   // Bahia
   const [modalBA, setModalBA] = React.useState(false);
-  const toggleModalBA = () => {
-    setModalBA(!modalBA);
-  };
+  const toggleModalBA = () => { setModalBA(!modalBA); };
 
   // Espírito Santo
   const [modalES, setModalES] = React.useState(false);
-  const toggleModalES = () => {
-    setModalES(!modalES);
-  };
+  const toggleModalES = () => { setModalES(!modalES); };
 
   // Lisboa
   const [modalLisboa, setModalLisboa] = React.useState(false);
-  const toggleModalLisboa = () => {
-    setModalLisboa(!modalLisboa);
-  };
+  const toggleModalLisboa = () => { setModalLisboa(!modalLisboa); };
 
   // Guimaraes
   const [modalGuimaraes, setModalGuimaraes] = React.useState(false);
-  const toggleModalGuimaraes = () => {
-    setModalGuimaraes(!modalGuimaraes);
-  };
+  const toggleModalGuimaraes = () => { setModalGuimaraes(!modalGuimaraes); };
 
   // Chile
   const [modalChile, setModalChile] = React.useState(false);
-  const toggleModalChile = () => {
-    setModalChile(!modalChile);
-  };
-
-  // const [modal, setModal] = React.useState(false);
-  // const toggleModal = () => {
-  //   setModal(!modal);
-  // };
+  const toggleModalChile = () => { setModalChile(!modalChile); };
 
   const represents = [
     { ID: 0, modal: modalPE, toggleModal: toggleModalPE, Name: "Pernambuco", Abbr: "PE", Directors: { Dir: "Siqueira", ViceDir: "Flávio", Social: "XXXXX", Communication: "Padilha", RoadCaptain: "XXXXX", RoadMissionary: "XXXXX", Admin: "XXXXX" } } ,
@@ -165,12 +128,11 @@ function SectionTypography() {
 
   return (
     <>
-      <div className="section section-scmcc-grey">
-        <div id="images">
+      <div className="section text-center">
+        <div id="teste">
           <Container>
-            <div className="title text-center">
-              <h2><strong>Representações</strong></h2>
-              <hr />
+            <div className="title text-center border-bottom-size">
+              <h2 className="double"><strong>Representações</strong></h2>
             </div>
             <Row>
               {

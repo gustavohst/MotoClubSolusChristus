@@ -68,7 +68,7 @@ function SectionCarousel() {
   };
   return (
     <>
-      <div className="section-scmcc-grey" id="carousel">
+      <div id="carousel">
         <Container>
           <Row>
             <Col className="ml-auto mr-auto" md="12">

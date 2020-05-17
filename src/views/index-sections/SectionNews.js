@@ -42,18 +42,21 @@ function SectionAboutUs() {
       <div className="section section-dark">
         <div className="section-buttons">
           <Container>
-            <div className="title text-center">
-              <h2><strong>Notícias</strong></h2>
-              <hr />
-            </div>
-            <div id="buttons">  
-              <div className="newsContainer">    
-                <img className="newsBanner" src={require("assets/img/bannerNoticias.png")} />
-              </div>
-            </div>
+            <Row>
+              <Col  md="12">
+                <div className="title text-center  border-bottom-size">
+                  <h2 className="double"><strong>Notícias</strong></h2>
+                </div>
+                <div id="buttons">  
+                  <div className="newsContainer">    
+                    <img className="newsBanner" src={require("assets/img/bannerNoticias.webp")} />
+                  </div>
+                </div>
+              </Col>
+            </Row>
           </Container>
         </div>
-      </div>
+        </div>{" "} 
     </>
   );
 }

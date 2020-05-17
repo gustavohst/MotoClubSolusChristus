@@ -39,23 +39,23 @@ import {
 function SectionAboutUs() {
   return (
     <>
-      <div className="section section-scmcc-grey">
+      <div className="section">
         <Container>
-          <div className="title text-center">
-            <h2><strong>Nossa história</strong></h2>
-            <hr />
+          <div className="title text-center border-bottom-size">
+            <h2 className="double"><strong>Nossa história</strong></h2>
           </div>
           <div id="buttons">
             <div className="title">
               <h3>
                 <small>
                 <details>
-                  <summary>Em 04 de dezembro de 2018, após Siqueira sair do ESQUADRÃO DE CRISTO MM e ficar cumprindo um luto estipulado de 12 meses pelo ministério, 
+                  <summary>
+                    <p>Em 04 de dezembro de 2018, após Siqueira sair do ESQUADRÃO DE CRISTO MM e ficar cumprindo um luto estipulado de 12 meses pelo ministério, 
                     o mesmo no início de março de 2019, fez contato com o Athos 2 MC (MT), com a finalidade de, no término de seu luto adentrar nas fileiras daquele clube cristão 
-                    e levantar a bandeira ATHOS 2 no estado de Pernambuco. Demonstrando assim, a vontade de seguir seu chamado evangelístico. <div class="font-weight-light">Ver mais...</div>
+                    e levantar a bandeira ATHOS 2 no estado de Pernambuco. Demonstrando assim, a vontade de seguir seu chamado evangelístico.</p> <div className="text-center font-weight-light">Ver mais...</div>
                   </summary>
                   <br/>
-                  Assim, junto com Paulo Paiva e Shina, todos ex integrantes do ECMM, começaram um trabalho de recrutamento para ao fim do luto dos mesmos, iniciarem uma 
+                  <p>Assim, junto com Paulo Paiva e Shina, todos ex integrantes do ECMM, começaram um trabalho de recrutamento para ao fim do luto dos mesmos, iniciarem uma 
                   nova história no ATHOS 2 MC. Nessa ocasião, FERNANDO até então fundador do HERDEIROS MG, resolve baixar a bandeira e agregar ao novo projeto. 
                   Agora com 7 membros: SHINA, PAULO PAIVA, SIQUEIRA, COUTINHO (ex ECMM), CARIOCA (ex KERIGMA-RJ), FERNANDO e SILAS (ex HERDEIROS MG), que tornaram responsáveis pelo novo trabalho. 
                   No entanto, o projeto não foi continuado e desistimos do Athos 2.
@@ -71,7 +71,7 @@ function SectionAboutUs() {
                   Agora tinhamos o projeto SCMCC, porém ainda assim Siqueira, Paulo Paiva e Shina tinham um luto restante de 9 meses a cumprir antes de levantar a bandeira.
                   No mês seguinte o Pr. Moraes (SP) e o Pr. Rúbem (PB), resolveram sair do ATHOS 2 e agregaram ao SCMCC, vale salientar que o A2 em seu estatuto, não havia luto para se cumprir. 
                   De mesma forma Tigrão (DF) e Vitorino (DF), estes sem luto vieram somar ao novo clube.
-                  Apesar de não termos lutos a cumprir, resolvemos esperar até o dia 25 de junho de 2019 para o levantamento de nossa bandeira, tendo como padrinhos o OURIÇOS DO ASLFALTO MC (PE).
+                  Apesar de não termos lutos a cumprir, resolvemos esperar até o dia 25 de junho de 2019 para o levantamento de nossa bandeira, tendo como padrinhos o OURIÇOS DO ASLFALTO MC (PE).</p>
                   </details>
                   <br/>
                 </small>

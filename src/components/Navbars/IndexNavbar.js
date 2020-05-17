@@ -20,8 +20,7 @@ import React from "react";
 // nodejs library that concatenates strings
 import classnames from "classnames";
 
-import ReactAudioPlayer from 'react-audio-player';
-
+import AudioPlayer from "react-h5-audio-player";
 // reactstrap components
 import {
   Button,
@@ -69,13 +68,13 @@ function IndexNavbar() {
       <Container>
         <div className="navbar-translate margin-default-left">
           
-          <NavbarBrand
+          <NavbarBrand className="font-size-custom"
             data-placement="bottom"
             href="/index"
             target="_blank"
             title="Solus Christus MCC"
           >
-            Solus Christus MCC
+          Solus Christus MCC
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -89,7 +88,7 @@ function IndexNavbar() {
             <span className="navbar-toggler-bar bar3" />
           </button>
         </div>
-        </Container>
+        
         <Collapse
           className="justify-content-end"
           navbar
@@ -129,11 +128,22 @@ function IndexNavbar() {
                 <p className="d-lg-none">Instagram</p>
               </NavLink>
             </NavItem>
+            <NavItem >
+              
+            </NavItem>
           </Nav>
-          <ReactAudioPlayer volume="1.0" autoPlay title="Rádio Solus Christus" className="radio-color margin-default-right" src="http://109.169.76.155:25073/;stream.mp3" controls  />
+
+          <audio className="radio-player margin-default-right" title="Rádio Solus Christus"
+              autoPlay
+              loop
+              controls
+              src="http://109.169.76.155:25073/;stream.mp3">
+          </audio>
+          {/* <AudioPlayer title="Rádio Solus Christus" className="radio-color margin-default-right" autoPlay src="http://109.169.76.155:25073/;stream.mp3" onPlay={e => console.log("onPlay")}/> */}
+          {/* <ReactAudioPlayer volume="1.0" autoPlay title="Rádio Solus Christus" className="radio-color margin-default-right" src="http://109.169.76.155:25073/;stream.mp3" controls  /> */}
         </Collapse>
       
-      
+        </Container>
     </Navbar>
     
   );

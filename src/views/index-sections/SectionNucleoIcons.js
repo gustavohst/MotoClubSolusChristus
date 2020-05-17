@@ -26,7 +26,7 @@ import { Button, Container, Row, Col } from "reactstrap";
 function SectionNucleoIcons() {
   return (
     <>
-      <div className="section section-nucleo-icons section-dark text-left">
+      <div className="section section-dark text-center">
         <Container>
           <Row>
             <Col lg="6" md="12">
@@ -61,12 +61,10 @@ function SectionNucleoIcons() {
             </Col>
 
              <Col lg="6" md="12">
-              <div className="description">
+              
                 <br /><br />
-                <strong>SOLUS CHRISTUS MCC - BRASIL</strong>
-                
-                <p className="description">E conhecereis a verdade, e a verdade vos libertará.</p>
-                <p>João 8:32</p>
+                <h2 className="title">E conhecereis a verdade, e a verdade vos libertará.</h2>
+                <p className="title">João 8:32</p>
                 
                 {/* <i className="nc-icon nc-time-alarm" />
                 <i className="nc-icon nc-atom" />
@@ -83,7 +81,7 @@ function SectionNucleoIcons() {
                 <i className="nc-icon nc-tie-bow" />
                 <i className="nc-icon nc-zoom-split" />
                 <i className="nc-icon nc-cloud-download-93" /> */}
-              </div> 
+              
               {/* <div>
               <img
                   alt="..."

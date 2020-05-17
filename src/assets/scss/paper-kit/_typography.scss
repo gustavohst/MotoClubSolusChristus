@@ -1,5 +1,5 @@
 /*           Font Smoothing      */
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td, button, input, select, textarea{
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .navbar, .brand, a, .td-name, td, button, input, select, textarea{
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-family: $font-family-sans-serif;
@@ -15,6 +15,17 @@ h1, .h1 {
 h2, .h2{
     font-size: $font-size-h2;
 }
+h2.double {
+    border-bottom-style: double;
+    padding-bottom: 20px;
+    border-color: #9A9A9A;
+}
+
+.title.border-bottom-size {
+    width: 50%;
+    margin: auto;
+}
+
 h3, .h3{
     font-size: $font-size-h3;
     line-height: 1.4;
@@ -38,6 +49,7 @@ p{
     font-size: $font-paragraph;
     line-height: $line-height-general;
     margin-bottom: 5px;
+    font-family: $font-family-content;
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
@@ -131,4 +143,9 @@ blockquote small{
 }
 .title.text-center{
     margin-bottom: 50px;
+}
+
+
+.font-size-custom {
+    font-size: 25px!important;
 }

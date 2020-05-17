@@ -133,7 +133,7 @@ function SectionTypography() {
           <Container>
             <div className="title text-center border-bottom-size">
               {/* <h2 className="double"><strong>Representações</strong></h2> */}
-              <h2 className="double"><img className="img-responsive" src={require("assets/img/titles/representations.webp")}></img></h2>
+              <h2 className="double"><img className="img-tittle-align-center img-responsive" src={require("assets/img/titles/representations.webp")}></img></h2>
             </div>
             <Row>
               {

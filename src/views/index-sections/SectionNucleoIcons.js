@@ -38,9 +38,7 @@ function SectionNucleoIcons() {
               <br />
               <h3 className="title">Email</h3>
               <br />
-              <p className="description">
-              <a href="mailto:soluschristusmcc@gmail.com?subject=Contato Site">soluschristusmcc@gmail.com</a>               
-              </p>
+              <a href="mailto:soluschristusmcc@gmail.com?subject=Contato Site"><p className="description">soluschristusmcc@gmail.com</p></a>
               {/* <Button
                 className="btn-round"
                 color="danger"
@@ -62,9 +60,9 @@ function SectionNucleoIcons() {
 
              <Col lg="6" md="12">
               
-                <br /><br />
-                <h2 className="title">E conhecereis a verdade, e a verdade vos libertará.</h2>
-                <p className="title">João 8:32</p>
+                <br /><br /><br />
+                {/* <h2 className="title">E conhecereis a verdade, e a verdade vos libertará.</h2> */}
+                <h2 className="title"><img className="img-responsive" src={require("assets/img/titles/joao8-32.png")}></img></h2>
                 
                 {/* <i className="nc-icon nc-time-alarm" />
                 <i className="nc-icon nc-atom" />

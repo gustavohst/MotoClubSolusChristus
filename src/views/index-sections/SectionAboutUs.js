@@ -42,39 +42,45 @@ function SectionAboutUs() {
       <div className="section">
         <Container>
           <div className="title text-center border-bottom-size">
-            <h2 className="double"><strong>Nossa história</strong></h2>
+            {/* <h2 className="double"><strong>Nossa história</strong></h2> */}
+            <h2 className="double"><img className="img-responsive" src={require("assets/img/titles/aboutHistory.png")}></img></h2>
           </div>
           <div id="buttons">
             <div className="title">
               <h3>
-                <small>
-                <details>
-                  <summary>
-                    <p>Em 04 de dezembro de 2018, após Siqueira sair do ESQUADRÃO DE CRISTO MM e ficar cumprindo um luto estipulado de 12 meses pelo ministério, 
-                    o mesmo no início de março de 2019, fez contato com o Athos 2 MC (MT), com a finalidade de, no término de seu luto adentrar nas fileiras daquele clube cristão 
-                    e levantar a bandeira ATHOS 2 no estado de Pernambuco. Demonstrando assim, a vontade de seguir seu chamado evangelístico.</p> <div className="text-center font-weight-light">Ver mais...</div>
-                  </summary>
-                  <br/>
-                  <p>Assim, junto com Paulo Paiva e Shina, todos ex integrantes do ECMM, começaram um trabalho de recrutamento para ao fim do luto dos mesmos, iniciarem uma 
-                  nova história no ATHOS 2 MC. Nessa ocasião, FERNANDO até então fundador do HERDEIROS MG, resolve baixar a bandeira e agregar ao novo projeto. 
-                  Agora com 7 membros: SHINA, PAULO PAIVA, SIQUEIRA, COUTINHO (ex ECMM), CARIOCA (ex KERIGMA-RJ), FERNANDO e SILAS (ex HERDEIROS MG), que tornaram responsáveis pelo novo trabalho. 
-                  No entanto, o projeto não foi continuado e desistimos do Athos 2.
-                  
-                  Entre os dias 26 e 29 de maio, Paulo Paiva e Siqueira, elaboraram o rascunho do ESTATUTO e LOGOMARCA do pretendido SOLUS CHRISTUS MG PERNAMBUCO.
-
-                  Em 30 de março de 2019, convocamos a primeira reunião na casa de Siqueira e juntamente com Paulo Paiva que desenvolveu a arte final, foi apresentado ao grupo o 
-                  projeto SOLUS CHRISTUS MCC. Presentes na reunião de fundação estavam: Carioca, Fernando, Coutinho, Silas, Siqueira, Shina e Paulo Paiva.
-                  Como se tratava de um motoclube cristão, ficou então acordado no dia 30 de março de 2019, que o presidente do SOLUS CHRISTUS MCC, seria o nosso Senhor JESUS CRISTO... 
-                  Que nosso clube não seria para honrar homens, mas sim para Cristo e que toda regra que viesse a atrapalhar nossa atividade fim, deveria ser retirada do estatuto, 
-                  dessa maneira foi feito um estatuto onde o fardo é leve e o julgo suave. Devemos então agradar somente a Deus e não a homens, temos compromisso com a causa biker, 
-                  porém esta nunca poderá ser maior que as Escrituras Sagradas.
-                  Agora tinhamos o projeto SCMCC, porém ainda assim Siqueira, Paulo Paiva e Shina tinham um luto restante de 9 meses a cumprir antes de levantar a bandeira.
-                  No mês seguinte o Pr. Moraes (SP) e o Pr. Rúbem (PB), resolveram sair do ATHOS 2 e agregaram ao SCMCC, vale salientar que o A2 em seu estatuto, não havia luto para se cumprir. 
-                  De mesma forma Tigrão (DF) e Vitorino (DF), estes sem luto vieram somar ao novo clube.
-                  Apesar de não termos lutos a cumprir, resolvemos esperar até o dia 25 de junho de 2019 para o levantamento de nossa bandeira, tendo como padrinhos o OURIÇOS DO ASLFALTO MC (PE).</p>
-                  </details>
-                  <br/>
-                </small>
+                <div className="sc-about-content">
+                  <p>
+                    Em <strong>04</strong> de dezembro de <strong>2018</strong>, após <i>Siqueira</i> sair de seu ex moto clube e ficar cumprindo um luto estipulado 
+                    de 12 meses, o mesmo no início de março de 2019, fez contato com outro moto clube, com a finalidade de, no término de seu luto adentrar nas fileiras daquele 
+                    clube e levantar sua bandeira no estado de Pernambuco. Demonstrando assim, a vontade de seguir seu chamado evangelístico.
+                  </p> 
+                  <div className="sc-about-content-hidden">
+                    <p>
+                      Assim, junto com <i>Paulo Paiva</i> e <i>Shina</i>, todos companheiros de seu ex moto clube, começaram um trabalho de recrutamento, 
+                      para ao fim do luto dos mesmos iniciarem uma nova história neste clube. Nessa ocasião, <i>Fernando</i> até então fundador do <i>HERDEIROS MG</i>, 
+                      resolve baixar a bandeira e agregar ao novo projeto. Agora com 7 membros: <i>Shina</i>, <i>Paulo Paiva</i>, <i>Siqueira</i>
+                      , <i>Coutinho</i>, <i>Carioca</i>, <i>Fernando</i> e <i>Silas</i>, que tornaram responsáveis pelo novo trabalho. 
+                      No entanto, o projeto de adentrar neste clube não foi continuado.
+                    </p>
+                    <p>
+                      Entre os dias <strong>26</strong> e <strong>29</strong> de maio, <i>Paulo Paiva</i> e <i>Siqueira</i>, elaboraram o rascunho do
+                      <i> Estatuto</i> e <i>Logomarca</i> do pretendido <strong>SOLUS CHRISTUS MG (PE)</strong>. Em <strong>30</strong> de março de <strong>2019</strong>, convocamos a 
+                      primeira reunião na casa de <i>Siqueira</i> e juntamente com <i>Paulo Paiva</i> que desenvolveu a arte final, foi apresentado ao grupo o projeto 
+                      <strong> SOLUS CHRISTUS MCC</strong>. Presentes na reunião de fundação estavam: <i>Carioca</i>, <i>Fernando</i>, <i>Coutinho</i>, 
+                      <i> Silas</i>, <i>Siqueira</i>, <i>Shina</i> e <i>Paulo Paiva</i>. Como se tratava de um motoclube cristão, ficou então acordado 
+                      no dia <strong>30</strong> de março de <strong>2019</strong>, que o presidente do <strong>SOLUS CHRISTUS MCC</strong>, seria o nosso <strong>Senhor JESUS CRISTO </strong> 
+                      e que nosso clube não seria para honrar homens, mas sim para <strong>Cristo</strong> e que toda regra que viesse a atrapalhar nossa atividade fim, deveria ser retirada 
+                      do estatuto, dessa maneira foi feito um estatuto onde o fardo é leve e o julgo suave. Devemos então agradar somente a <strong>Deus</strong> e não a homens, 
+                      temos compromisso com a causa biker, porém esta nunca poderá ser maior que as <strong>Escrituras Sagradas</strong>. Agora tinhamos o projeto <strong>SCMCC</strong>, 
+                      porém ainda assim <i>Siqueira</i>, <i>Paulo Paiva</i> e <i>Shina</i> tinham um luto restante de 9 meses a cumprir antes 
+                      de levantar a bandeira. No mês seguinte o <i>Pr. Moraes (SP)</i> e o <i>Pr. Rúbem (PB)</i>, resolveram sair de seus antigos moto clubes 
+                      e agregaram ao <strong>SCMCC</strong>, vale salientar que seus antigos moto clubes em seu estatuto, não havia luto para se cumprir. De mesma forma 
+                      <i>Tigrão (DF)</i> e <i>Vitorino (DF)</i>, estes sem luto vieram somar ao novo clube. Apesar de não termos lutos a cumprir, resolvemos 
+                      esperar até o dia <strong>25</strong> de junho de <strong>2019</strong> para o levantamento de nossa bandeira, tendo como padrinhos o 
+                      <strong> OURIÇOS DO ASLFALTO MC (PE)</strong>.
+                    </p>
+                  </div>
+                </div>
               </h3>
             </div>
           </div>

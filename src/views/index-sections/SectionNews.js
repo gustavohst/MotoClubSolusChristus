@@ -45,7 +45,8 @@ function SectionAboutUs() {
             <Row>
               <Col  md="12">
                 <div className="title text-center  border-bottom-size">
-                  <h2 className="double"><strong>Notícias</strong></h2>
+                  {/* <h2 className="double"><strong>Notícias</strong></h2> */}
+                  <h2 className="double"><img className="img-responsive" src={require("assets/img/titles/WhiteNews.png")}></img></h2>
                 </div>
                 <div id="buttons">  
                   <div className="newsContainer">    

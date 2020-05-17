@@ -149,3 +149,27 @@ blockquote small{
 .font-size-custom {
     font-size: 25px!important;
 }
+
+.sc-about-content {
+    cursor: pointer;
+    width: 100%;
+    max-height: 70px;
+    transition: max-height 1.1s;
+}
+.sc-about-content > .sc-about-content-hidden {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+    
+}
+
+.sc-about-content:hover > .sc-about-content-hidden {
+    opacity: 1;
+}
+
+.sc-about-content:hover {
+    // height: 430px;
+    // height: auto;
+    max-height: 1500px;
+}
+
+

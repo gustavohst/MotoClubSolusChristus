@@ -33,11 +33,19 @@ import {
   Row,
   Col
 } from "reactstrap";
-import { isTemplateExpression } from "typescript";
 
 // core components
 
+function getFileName(path) {
+  var array = path.split("/");
+  return array[array.length - 1];
+}
+
 function SectionBodyModal(props) {
+
+  var photoDir = getFileName(props.directors.Dir.Photo);
+  var photoViceDir = getFileName(props.directors.ViceDir.Photo);
+
   const [activeTab, setActiveTab] = React.useState("1");
   const toggle = tab => {
     if (activeTab !== tab) {
@@ -86,11 +94,11 @@ function SectionBodyModal(props) {
                         <div>
                           <img
                             alt="..."
-                            className="img-circle img-no-padding img-responsive"
-                            src={require("assets/img/faces/erik-lucatero-2.jpg")}
+                            className="img-thumbnail img-custom sc-img-directors-dimension img-no-padding img-responsive"
+                            src={require("assets/img/representations/Directors/" + photoDir)}
                           />
                           <p><strong>Diretor</strong></p>
-                          <p>{props.directors.Dir}</p>
+                          <p>{props.directors.Dir.Name}</p>
                           <p>(xx)xxxxx-xxxx</p>
                         </div>
                       </Col>
@@ -100,21 +108,21 @@ function SectionBodyModal(props) {
                       <div>
                         <img
                           alt="..."
-                          className="img-circle img-no-padding img-responsive"
-                          src={require("assets/img/faces/ayo-ogunseinde-2.jpg")}
+                          className="img-thumbnail img-custom sc-img-directors-dimension img-no-padding img-responsive"
+                          src={require("assets/img/representations/Directors/" + photoViceDir)}
                         />
                         <p><strong>Vice-Diretor</strong></p>
-                        <p>{props.directors.ViceDir}</p>
+                        <p>{props.directors.ViceDir.Name}</p>
                         <p>(xx)xxxxx-xxxx</p>
                       </div>
                     </Col>
                     }
-                    {props.directors.Communication != "XXXXX" &&
+                    {/* {props.directors.Communication != "XXXXX" &&
                     <Col className="mr-auto ml-auto" md="3" sm="4">
                       <div>
                         <img
                           alt="..."
-                          className="img-circle img-no-padding img-responsive"
+                          className="img-thumbnail img-custom img-no-padding img-responsive"
                           src={require("assets/img/faces/ayo-ogunseinde-2.jpg")}
                         />
                         <p><strong>Dir. Comunicação</strong></p>
@@ -128,7 +136,7 @@ function SectionBodyModal(props) {
                       <div>
                         <img
                           alt="..."
-                          className="img-circle img-no-padding img-responsive"
+                          className="img-thumbnail img-custom img-no-padding img-responsive"
                           src={require("assets/img/faces/clem-onojeghuo-2.jpg")}
                         />
                         <p><strong>Diretor Social</strong></p>
@@ -142,7 +150,7 @@ function SectionBodyModal(props) {
                       <div>
                         <img
                           alt="..."
-                          className="img-circle img-no-padding img-responsive"
+                          className="img-thumbnail img-custom img-no-padding img-responsive"
                           src={require("assets/img/faces/clem-onojeghuo-3.jpg")}
                         />
                         <p><strong>Road Captain</strong></p>
@@ -156,7 +164,7 @@ function SectionBodyModal(props) {
                       <div>
                         <img
                           alt="..."
-                          className="img-circle img-no-padding img-responsive"
+                          className="img-thumbnail img-custom img-no-padding img-responsive"
                           src={require("assets/img/faces/ayo-ogunseinde-2.jpg")}
                         />
                         <p><strong>Road Missionary</strong></p>
@@ -170,7 +178,7 @@ function SectionBodyModal(props) {
                       <div>
                         <img
                           alt="..."
-                          className="img-circle img-no-padding img-responsive"
+                          className="img-thumbnail img-custom img-no-padding img-responsive"
                           src={require("assets/img/faces/ayo-ogunseinde-2.jpg")}
                         />
                         <p><strong>Diretor Administrativo</strong></p>
@@ -178,7 +186,7 @@ function SectionBodyModal(props) {
                         <p>(xx)xxxxx-xxxx</p>
                       </div>
                     </Col>
-                    }
+                    } */}
                   </Row>
                 </TabPane>
                 <TabPane tabId="2">

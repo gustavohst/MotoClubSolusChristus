@@ -94,7 +94,7 @@ function SectionBodyModal(props) {
                         <div>
                           <img
                             alt="..."
-                            className="img-thumbnail img-custom sc-img-directors-dimension img-no-padding img-responsive"
+                            className="img-thumbnail img-custom img-no-padding img-responsive"
                             src={require("assets/img/representations/Directors/" + photoDir)}
                           />
                           <p><strong>Diretor</strong></p>
@@ -108,7 +108,7 @@ function SectionBodyModal(props) {
                       <div>
                         <img
                           alt="..."
-                          className="img-thumbnail img-custom sc-img-directors-dimension img-no-padding img-responsive"
+                          className="img-thumbnail img-custom img-no-padding img-responsive"
                           src={require("assets/img/representations/Directors/" + photoViceDir)}
                         />
                         <p><strong>Vice-Diretor</strong></p>

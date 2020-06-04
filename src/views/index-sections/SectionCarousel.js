@@ -40,7 +40,14 @@ const items = [
   { src: require("assets/img/carousel/06.webp"), altText: "Solus Christus" },
   { src: require("assets/img/carousel/07.webp"), altText: "Solus Christus" },
   { src: require("assets/img/carousel/08.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/09.webp"), altText: "Solus Christus" }
+  { src: require("assets/img/carousel/09.webp"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/10.webp"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/11.webp"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/12.webp"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/13.webp"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/14.jpeg"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/15.jpeg"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/16.jpeg"), altText: "Solus Christus" }
 ];
 
 function SectionCarousel() {

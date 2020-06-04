@@ -20,7 +20,8 @@ import React from "react";
 // nodejs library that concatenates strings
 import classnames from "classnames";
 
-import AudioPlayer from "react-h5-audio-player";
+// import AudioPlayer from "react-h5-audio-player";
+// import ReactAudioPlayer from "react-audio-player";
 // reactstrap components
 import {
   Button,
@@ -134,13 +135,13 @@ function IndexNavbar() {
           </Nav>
 
           <audio className="radio-player margin-default-right" title="Rádio Solus Christus"
-              autoPlay
-              loop
+              autoPlay="true"
+              loop="true"
               controls
               src="http://109.169.76.155:25073/;stream.mp3">
           </audio>
           {/* <AudioPlayer title="Rádio Solus Christus" className="radio-color margin-default-right" autoPlay src="http://109.169.76.155:25073/;stream.mp3" onPlay={e => console.log("onPlay")}/> */}
-          {/* <ReactAudioPlayer volume="1.0" autoPlay title="Rádio Solus Christus" className="radio-color margin-default-right" src="http://109.169.76.155:25073/;stream.mp3" controls  /> */}
+          {/* <ReactAudioPlayer volume="1.0" autoPlay title="Rádio Solus Christus" className="radio-player margin-default-right" src="http://109.169.76.155:25073/;stream.mp3" controls  /> */}
         </Collapse>
       
         </Container>

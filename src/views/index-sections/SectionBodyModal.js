@@ -52,10 +52,10 @@ function SectionBodyModal(props) {
       setActiveTab(tab);
     }
   };
-  
+
   return (
     <>
-      <div className="">
+      <div className="sc-modal-min-height">
         <Container>
           <Row>
             <Col md="12">
@@ -88,13 +88,18 @@ function SectionBodyModal(props) {
               <TabContent activeTab={activeTab} className="text-center">
                 <TabPane tabId="1">
                   <Row>
-                    {props.directors.Dir != "XXXXX" &&
+                    {(props.directors.Dir == "" || photoDir == "") && (props.directors.ViceDir == "" || photoViceDir == "") &&
                       <Col className="mr-auto ml-auto" md="3" sm="4">
+                        <p>Em breve...</p>
+                      </Col>
+                    }
+                    {(props.directors.Dir != "" && photoDir != "") &&
+                      <Col className="mr-auto ml-auto" md="4" sm="5">
                       
                         <div>
                           <img
                             alt="..."
-                            className="img-thumbnail img-custom img-no-padding img-responsive"
+                            className="img-thumbnail img-custom sc-img-dimension img-no-padding img-responsive"
                             src={require("assets/img/representations/Directors/" + photoDir)}
                           />
                           <p><strong>Diretor</strong></p>
@@ -103,12 +108,12 @@ function SectionBodyModal(props) {
                         </div>
                       </Col>
                     }
-                    {props.directors.ViceDir != "XXXXX" &&
-                    <Col className="mr-auto ml-auto" md="3" sm="4">
+                    {(props.directors.ViceDir != "" && photoViceDir != "") &&
+                    <Col className="mr-auto ml-auto" md="4" sm="5">
                       <div>
                         <img
                           alt="..."
-                          className="img-thumbnail img-custom img-no-padding img-responsive"
+                          className="img-thumbnail img-custom sc-img-dimension img-no-padding img-responsive"
                           src={require("assets/img/representations/Directors/" + photoViceDir)}
                         />
                         <p><strong>Vice-Diretor</strong></p>
@@ -190,7 +195,9 @@ function SectionBodyModal(props) {
                   </Row>
                 </TabPane>
                 <TabPane tabId="2">
-                  <p>Em breve...</p>
+                  <Col className="mr-auto ml-auto" md="3" sm="4">
+                    <p>Em breve...</p>
+                  </Col>
                 </TabPane>
               </TabContent>
             </Col>

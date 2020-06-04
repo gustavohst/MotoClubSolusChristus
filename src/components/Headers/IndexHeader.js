@@ -30,8 +30,9 @@ function IndexHeader() {
       <div
         className="page-header section-dark"
         style={{
-          backgroundImage:
-            "url(" + require("assets/img/LogoSolusChristus.webp") + ")"
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+          backgroundImage: "url(" + require("assets/img/logo/LogoSolusChristus.webp") + ")"
         }}
       >
         <div className="filter" />
@@ -58,7 +59,7 @@ function IndexHeader() {
           }}
         />
       <h6 className="category category-absolute">
-          Coded by Gustavo Tenório and Silas Silva.{" "}
+          Coded by Silas Silva and Gustavo Tenório{" "}
           {/* <a
             href="https://www.creative-tim.com?ref=pkr-index-page"
             target="_blank"

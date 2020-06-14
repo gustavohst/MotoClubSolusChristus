@@ -29,7 +29,7 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from "reactstrap";
-
+import InstagramEmbed from 'react-instagram-embed';
 // core components
 
 const items = [
@@ -45,41 +45,38 @@ const items = [
 ];
 
 function SectionGallery() {
-  const [activeIndex, setActiveIndex] = React.useState(0);
-  const [animating, setAnimating] = React.useState(false);
-  const onExiting = () => {
-    setAnimating(true);
-  };
-  const onExited = () => {
-    setAnimating(false);
-  };
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  };
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  };
-  const goToIndex = newIndex => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  };
   return (
     <>
-      <div className="pt-o" id="carousel">
-        <Container>
-        <Row>
-        
-          {items.map(item => (
-        <Col className="mr-auto ml-auto" md="12" >      
-            
-                <img src={item.src} alt={item.altText} className="img-gallery-custom  img-responsive" />
-                </Col>  
-          ))}
-          
+      <div>
+        <Container className="sc-clean-photo">
+          <Row>
+          <InstagramEmbed 
+            url='https://www.instagram.com/p/CA_wVkmAMev/?utm_source=ig_web_copy_link'
+            maxWidth={320}
+            hideCaption={true}
+            hide={true}
+            containerTagName='div'
+            protocol=''
+            injectScript
+            onLoading={() => {}}
+            onSuccess={() => {}}
+            onAfterRender={() => {}}
+            onFailure={() => {}}
+          />
+          <InstagramEmbed 
+            url='https://www.instagram.com/p/CA7o-AXpejs/?utm_source=ig_web_copy_link'
+            maxWidth={320}
+            maxHeight={320}
+            hideCaption={true}
+            hide={true}
+            containerTagName='div'
+            protocol=''
+            injectScript
+            onLoading={() => {}}
+            onSuccess={() => {}}
+            onAfterRender={() => {}}
+            onFailure={() => {}}
+          />
             </Row>
         </Container>
         <br />

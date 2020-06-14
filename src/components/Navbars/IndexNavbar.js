@@ -133,13 +133,18 @@ function IndexNavbar() {
               
             </NavItem>
           </Nav>
-
-          <audio className="radio-player margin-default-right" title="Rádio Solus Christus"
+          <audio className="radio-player margin-default-right" title="Hino Solus Christus"
+              autoPlay="true"
+              loop="true"
+              controls
+              src={require("assets/audio/hino.mp3")}>
+          </audio>
+          {/* <audio className="radio-player margin-default-right" title="Rádio Solus Christus"
               autoPlay="true"
               loop="true"
               controls
               src="http://109.169.76.155:25073/;stream.mp3">
-          </audio>
+          </audio> */}
           {/* <AudioPlayer title="Rádio Solus Christus" className="radio-color margin-default-right" autoPlay src="http://109.169.76.155:25073/;stream.mp3" onPlay={e => console.log("onPlay")}/> */}
           {/* <ReactAudioPlayer volume="1.0" autoPlay title="Rádio Solus Christus" className="radio-player margin-default-right" src="http://109.169.76.155:25073/;stream.mp3" controls  /> */}
         </Collapse>

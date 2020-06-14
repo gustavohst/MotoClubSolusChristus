@@ -43,7 +43,7 @@ function SectionAboutUs() {
         <Container>
           <div className="title text-center border-bottom-size">
             {/* <h2 className="double"><strong>Nossa história</strong></h2> */}
-            <h2 className="double"><img className="img-tittle-align-center img-responsive" src={require("assets/img/titles/aboutHistory.png")}></img></h2>
+            <h2 className="double"><img className="img-tittle-align-center img-responsive" src={require("assets/img/titles/aboutHistory.webp")}></img></h2>
           </div>
           <div id="buttons">
             <div className="title">

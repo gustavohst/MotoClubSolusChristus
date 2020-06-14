@@ -55,7 +55,7 @@ function IndexHeader() {
         <div
           className="moving-clouds"
           style={{
-            backgroundImage: "url(" + require("assets/img/clouds.png") + ")"
+            backgroundImage: "url(" + require("assets/img/clouds.webp") + ")"
           }}
         />
       <h6 className="category category-absolute">

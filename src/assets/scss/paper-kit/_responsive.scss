@@ -1,6 +1,11 @@
 /*          Changes for small display      */
 
 @media (max-width: 767px){
+    .radio-player {
+        width: 85%;
+        height: 30px; 
+        bottom: 10px;    
+    }
     #cd-vertical-nav {
         display: none !important;
     }
@@ -792,6 +797,18 @@
     .lightbox .modal-dialog{
         width: 960px;
     }
+    .radio-player {
+        margin-top: 0px;
+        height: 30px;
+        width: 19ch;
+        transition: width 0.3s linear;
+    }
+
+    .radio-player:hover {
+        margin-top: 0px;
+        width: 40ch;
+        height: 30px;
+    }
 }
 @media screen and (min-width: 767px){
     .section-sections{
@@ -806,8 +823,14 @@
         margin-top: 150px;
       }
     }
+    
 }
 @media (max-width:1023px) and (min-width:767px) {
+    .radio-player {
+        width: 99%;
+        height: 30px; 
+        bottom: 10px;       
+    }
     .presentation-page{
         .section-content{
             .image-container{

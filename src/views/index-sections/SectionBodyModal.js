@@ -61,7 +61,7 @@ function SectionBodyModal(props) {
             <Col md="12">
               <div className="nav-tabs-navigation">
                 <div className="nav-tabs-wrapper">
-                  <Nav id="tabs" role="tablist" tabs>
+                  <Nav id="tabs"className="cursor-pointer" role="tablist" tabs>
                     <NavItem>
                       <NavLink
                         className={activeTab === "1" ? "active" : ""}

@@ -129,18 +129,21 @@ function IndexNavbar() {
                 <p className="d-lg-none">Instagram</p>
               </NavLink>
             </NavItem>
-            <NavItem >
-              
+            <NavItem>
+              <NavLink
+                  data-placement="bottom"
+                  title="Hino Solus Christus"
+                >
+                <audio className="radio-player margin-default-right"
+                    autoPlay
+                    loop
+                    controls
+                    src={require("assets/audio/hino.mp3")}
+                    type="audio/mp3">
+                </audio>
+              </NavLink>
             </NavItem>
           </Nav>
-          <audio className="radio-player margin-default-right" title="Hino Solus Christus"
-              autoPlay
-              loop
-              volume="0.5"
-              controls
-              src={require("assets/audio/hino.mp3")}
-              type="audio/mp3">
-          </audio>
           {/* <audio className="radio-player margin-default-right" title="Rádio Solus Christus"
               autoPlay="true"
               loop="true"

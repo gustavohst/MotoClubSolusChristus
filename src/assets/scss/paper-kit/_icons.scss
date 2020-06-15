@@ -110,23 +110,3 @@
     color: $white-color;
 }
 
-.radio-player {
-    margin-top: 0px;
-    width: 25%;
-    height: 30px;
-    transition: width 0.3s linear;
-}
-
-.radio-player:hover {
-    margin-top: 0px;
-    width: 33%;
-    height: 30px;
-}
-
-.sc-audio-position {
-    // position: -webkit-sticky;
-    position: sticky;
-    bottom: 10px;
-    z-index: 9999999999999999999999999999999999999;
-    left: 100px;
-}

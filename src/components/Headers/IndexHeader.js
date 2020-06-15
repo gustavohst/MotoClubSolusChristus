@@ -30,9 +30,10 @@ function IndexHeader() {
       <div
         className="page-header section-dark"
         style={{
+          height: "100%",
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
-          backgroundImage: "url(" + require("assets/img/logo/LogoSolusChristus.webp") + ")"
+          backgroundImage: "url(" + require("assets/img/logo/LogoSolusChristus.png") + ")"
         }}
       >
         <div className="filter" />
@@ -55,7 +56,7 @@ function IndexHeader() {
         <div
           className="moving-clouds"
           style={{
-            backgroundImage: "url(" + require("assets/img/clouds.webp") + ")"
+            backgroundImage: "url(" + require("assets/img/clouds.png") + ")"
           }}
         />
       <h6 className="category category-absolute">

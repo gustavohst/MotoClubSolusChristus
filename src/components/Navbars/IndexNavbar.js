@@ -71,7 +71,7 @@ function IndexNavbar() {
           
           <NavbarBrand className="font-size-custom"
             data-placement="bottom"
-            href="/index"
+            href="/"
             target="_self"
             title="Solus Christus MCC"
           >
@@ -134,10 +134,12 @@ function IndexNavbar() {
             </NavItem>
           </Nav>
           <audio className="radio-player margin-default-right" title="Hino Solus Christus"
-              autoPlay="true"
-              loop="true"
+              autoPlay
+              loop
+              volume="0.5"
               controls
-              src={require("assets/audio/hino.mp3")}>
+              src={require("assets/audio/hino.mp3")}
+              type="audio/mp3">
           </audio>
           {/* <audio className="radio-player margin-default-right" title="Rádio Solus Christus"
               autoPlay="true"

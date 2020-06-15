@@ -33,40 +33,40 @@ import {
 // core components
 
 const items = [
-  { src: require("assets/img/carousel/01.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/03.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/23.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/04.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/05.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/22.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/06.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/21.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/07.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/17.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/08.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/09.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/10.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/19.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/11.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/20.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/13.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/14.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/16.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/18.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/12.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/25.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/26.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/27.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/29.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/30.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/31.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/32.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/33.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/34.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/35.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/36.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/37.webp"), altText: "Solus Christus" },
-  { src: require("assets/img/carousel/24.webp"), altText: "Solus Christus" }
+  { src: require("assets/img/carousel/01.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/03.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/23.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/04.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/05.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/22.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/06.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/21.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/07.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/17.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/08.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/09.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/10.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/19.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/11.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/20.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/13.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/14.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/16.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/18.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/12.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/25.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/26.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/27.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/29.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/30.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/31.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/32.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/33.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/34.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/35.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/36.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/37.png"), altText: "Solus Christus" },
+  { src: require("assets/img/carousel/24.png"), altText: "Solus Christus" }
 ];
 
 function SectionCarousel() {
@@ -118,7 +118,7 @@ function SectionCarousel() {
                       >
                         <img src={item.src} alt={item.altText} />
                         <CarouselCaption
-                          //captionText={item.caption}
+                          captionText=""
                           captionHeader=""
                         />
                       </CarouselItem>

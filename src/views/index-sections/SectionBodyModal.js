@@ -104,7 +104,7 @@ function SectionBodyModal(props) {
                           />
                           <p><strong>Diretor</strong></p>
                           <p>{props.directors.Dir.Name}</p>
-                          <p>(xx)xxxxx-xxxx</p>
+                          {/* <p>(xx)xxxxx-xxxx</p> */}
                         </div>
                       </Col>
                     }
@@ -118,7 +118,7 @@ function SectionBodyModal(props) {
                         />
                         <p><strong>Vice-Diretor</strong></p>
                         <p>{props.directors.ViceDir.Name}</p>
-                        <p>(xx)xxxxx-xxxx</p>
+                        {/* <p>(xx)xxxxx-xxxx</p> */}
                       </div>
                     </Col>
                     }
